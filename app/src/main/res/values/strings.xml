@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Kanji 2</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="logout">Logout</string>
+    <string name="sukoji_app">Sukoji App</string>
+    <string name="learn_japanese">Learn Japanese</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="hello">Hello!</string>
+    <string name="get_started">Get Started</string>
+    <string name="level_1">Level 1</string>
+    <string name="level_2">Level 2</string>
+    <string name="level_3">Level 3</string>
+    <string name="level_4">Level 4</string>
+    <string name="level_5">Level 5</string>
+    <string name="level_kanji">Level Kanji</string>
+    <string name="level_5_kanji">Level 5 Kanji</string>
+    <string name="itchikanji">ITCHI</string>
+    <string name="on_kun">On: イチ       Kun: ひと・つ</string>
+    <string name="itchi">一 Itchi</string>
+    <string name="meaning_one_1">Meaning: one; 1</string>
+    <string name="one_numeric_prefix_suffix">一 ひと one (numeric, prefix, suffix)</string>
+    <string name="one_for_one_thing_only_even">一 ひとつ one, for one thing, only, even</string>
+    <string name="handful_a_small_handful">一握り ひとにぎり handful, a small handful</string>
+    <string name="person_member">一員 いちいん person, member</string>
+    <string name="whole_district_one_yen_throughout">一円 いちえん whole district, one yen, throughout</string>
+</resources>
