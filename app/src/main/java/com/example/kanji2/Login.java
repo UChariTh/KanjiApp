@@ -40,12 +40,12 @@ public class Login extends AppCompatActivity {
         FirebaseUser currentUser = fAuth.getCurrentUser();
         if(currentUser != null){
 
-            signIn();
+//            signIn();
 
-//            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//            startActivity(intent);
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
 //            Toast.makeText(Login.this, "userID "+currentUser.getUid(), Toast.LENGTH_SHORT).show();
-//            finish();
+            finish();
         }
     }
 
@@ -66,7 +66,6 @@ public class Login extends AppCompatActivity {
         preferenceManager.putString(Constants.KEY_USER_ID,fAuth.getUid());
 
 //        String email=  preferenceManager.getString(Constants.KEY_PREFERENCE_EMAIL);
-//
 //        if(email != null){
 //            signIn();
 //        }
@@ -89,15 +88,13 @@ public class Login extends AppCompatActivity {
                 email = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());
 
-                if (TextUtils.isEmpty(email)){
-//                    Toast.makeText(Login.this, "Enter email", Toast.LENGTH_SHORT).show();
-                    editTextEmail.setError( "Enter email");
+                if (TextUtils.isEmpty(email)||!isValidEmail(email)){
+                    editTextEmail.setError( "Enter your Email address! ");
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)){
-                    Toast.makeText(Login.this, "Enter password", Toast.LENGTH_SHORT).show();
-//                    editTextPassword.setError( "Enter password");
+                    editTextPassword.setError( "Enter your password! ");
                     return;
                 }
 
@@ -131,7 +128,7 @@ public class Login extends AppCompatActivity {
     }
 
     void navigateToDashBoard(){
-        Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
         finish();
@@ -155,7 +152,10 @@ public class Login extends AppCompatActivity {
                         System.out.println("error"+e);
                     }
                 });
-
-
     }
+
+    private boolean isValidEmail(String email) {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+
 }

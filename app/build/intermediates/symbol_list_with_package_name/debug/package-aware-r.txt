@@ -3012,6 +3012,7 @@ drawable kao
 drawable koto
 drawable kuroi
 drawable kyu
+drawable layout_bg
 drawable levelcorner
 drawable logout
 drawable m3_appbar_background
@@ -3208,6 +3209,13 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn01
+id btn02
+id btn03
+id btn04
+id btn05
+id btn06
+id btn07
 id btnBack
 id btnErase
 id btnLogOut
@@ -3394,6 +3402,7 @@ id jumpToStart
 id labeled
 id layout
 id layout01
+id layoutDialog
 id left
 id leftToRight
 id legacy
@@ -3621,7 +3630,6 @@ id textTop
 id textView
 id textView10
 id textView11
-id textView12
 id textView18
 id textView19
 id textView2

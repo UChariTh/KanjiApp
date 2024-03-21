@@ -108,8 +108,8 @@
             android:fontFamily="@font/acme"
             android:padding="7dp"
             android:paddingStart="50dp"
-            android:textAlignment="center"
             android:text="Check Answer"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold" />

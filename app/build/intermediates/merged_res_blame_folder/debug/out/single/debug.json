@@ -4,12 +4,12 @@
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\raw\\futhago.mp4"
     },
     {
-        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\layout_activity_roku.xml.flat",
-        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\layout\\activity_roku.xml"
-    },
-    {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_kyu.gif.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\drawable\\kyu.gif"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\layout_activity_roku.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\layout\\activity_roku.xml"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_hachi.gif.flat",
@@ -60,12 +60,12 @@
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\raw\\kuku.mp4"
     },
     {
-        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\raw_rokugatsu.mp4.flat",
-        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\raw\\rokugatsu.mp4"
-    },
-    {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\raw_rokugatsu.mp4.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\raw\\rokugatsu.mp4"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_shi.gif.flat",
@@ -208,6 +208,10 @@
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "com.example.kanji2.app-merged_res-35:/layout_activity_main.xml.flat",
+        "source": "com.example.kanji2.app-main-37:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\layout_activity_level_kanji.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\layout\\activity_level_kanji.xml"
     },
@@ -268,12 +272,12 @@
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\raw\\hachigatsu.mp4"
     },
     {
-        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_eraserimage.png.flat",
-        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\drawable\\eraserimage.png"
-    },
-    {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_eraserimage.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\drawable\\eraserimage.png"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\mipmap-hdpi_ic_launcher.png.flat",
@@ -284,12 +288,12 @@
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\raw\\shigathu.mp4"
     },
     {
-        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\font_acme.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\font\\acme.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\raw_jinan.mp4.flat",
@@ -370,6 +374,10 @@
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\layout_activity_go.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\layout\\activity_go.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_layout_bg.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\drawable\\layout_bg.xml"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_juu.gif.flat",
@@ -486,10 +494,6 @@
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_round_button.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\drawable\\round_button.xml"
-    },
-    {
-        "merged": "com.example.kanji2.app-merged_res-35:/layout_activity_itchi.xml.flat",
-        "source": "com.example.kanji2.app-main-37:/layout/activity_itchi.xml"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_eraser.png.flat",

@@ -84,72 +84,17 @@ public class Register extends AppCompatActivity {
             }
         });
 
-//        buttonReg.setOnClickListener(view -> {
-//
-//            String email, password;
-//            email = String.valueOf(editTextEmail.getText());
-//            password = String.valueOf(editTextPassword.getText());
-//
-//            if (parentname.isEmpty()) {
-//                parentName.setError("Enter parent's name ");
-//                return;
-//            }
-//            if (name.isEmpty()) {
-//                childName.setError("Enter child's name ");
-//                return;
-//            }
-//            if (age.isEmpty()) {
-//                userage.setError("Enter child's age ");
-//                return;
-//            }
-//            try {
-//                int ageValue = Integer.parseInt(age);
-//
-//            } catch (NumberFormatException e) {
-//                userage.setError("Enter only numbers ");
-//                return;
-//            }
-//            if (email.isEmpty()) {
-//                useremail.setError("Enter your E-mail address ");
-//                return;
-//            }
-//            if (!isValidEmail(email)) {
-//                useremail.setError("Please enter valid E-mail address ");
-//                return;
-//            }
-//            if (password.isEmpty()) {
-//                userpassword.setError("Enter password ");
-//                return;
-//            }
-//            if (!isValidPassword(password)) {
-//                userpassword.setError("You have to enter at least 6 characters");
-//                return;
-//            }
-
 
         buttonReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 progressBar.setVisibility(View.VISIBLE);
 
-                String email=editTextEmail.getText().toString().trim();
-                String password=editTextPassword.getText().toString().trim();
                 String name = editTextUserName.getText().toString();
                 String telephone = editTextTelephone.getText().toString();
+                String email=editTextEmail.getText().toString().trim();
+                String password=editTextPassword.getText().toString().trim();
 
-                if (TextUtils.isEmpty(email)){
-                    editTextEmail.setError("Enter Email Address! ");
-                    return;
-                }
-                if (TextUtils.isEmpty(password)){
-                    Toast.makeText(Register.this, "Enter password", Toast.LENGTH_SHORT).show();
-                    editTextPassword.setError("Enter Password! ");
-                    return;
-                }
-//                if (!isValidPassword(password)) {
-//                    editTextPassword.setError("You have to enter at least 6 characters");
-//                    return;
-//                }
                 if (TextUtils.isEmpty(name)){
                     editTextUserName.setError("Enter Your Name! ");
                     return;
@@ -158,6 +103,30 @@ public class Register extends AppCompatActivity {
                     editTextTelephone.setError("Enter Your Telephone Number! ");
                     return;
                 }
+                try {
+                    int ageValue = Integer.parseInt(telephone);
+
+                } catch (NumberFormatException e) {
+                    editTextTelephone.setError("Enter only numbers! ");
+                    return;
+                }
+                if (TextUtils.isEmpty(email)){
+                    editTextEmail.setError("Enter Email Address! ");
+                    return;
+                }
+                if (!isValidEmail(email)) {
+                    editTextEmail.setError("Please enter valid E-mail address! ");
+                    return;
+                }
+                if (TextUtils.isEmpty(password)){
+                    editTextPassword.setError("Enter Password! ");
+                    return;
+                }
+                if (!isValidPassword(password)) {
+                    editTextPassword.setError("You have to enter at least 6 characters! ");
+                    return;
+                }
+
 
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -201,11 +170,11 @@ public class Register extends AppCompatActivity {
 
     }
 
-//    private boolean isValidEmail(String email) {
-//        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
-//    }
-//
-//    private boolean isValidPassword(String password) {
-//        return password.length() >= 6;
-//    }
+    private boolean isValidEmail(String email) {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+
+    private boolean isValidPassword(String password) {
+        return password.length() >= 6;
+    }
 }

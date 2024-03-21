@@ -40,6 +40,7 @@ drawable kao
 drawable koto
 drawable kuroi
 drawable kyu
+drawable layout_bg
 drawable levelcorner
 drawable logout
 drawable nana
@@ -57,6 +58,13 @@ font acme
 font alegreya
 id add_note
 id backbutton
+id btn01
+id btn02
+id btn03
+id btn04
+id btn05
+id btn06
+id btn07
 id btnBack
 id btnErase
 id btnLogOut
@@ -109,6 +117,7 @@ id imageView2
 id imageView3
 id instruction
 id layout01
+id layoutDialog
 id listView
 id loginNow
 id navigateGame
@@ -120,7 +129,6 @@ id telephoneNumber
 id textView
 id textView10
 id textView11
-id textView12
 id textView18
 id textView19
 id textView2

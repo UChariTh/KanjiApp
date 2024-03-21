@@ -7,77 +7,37 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class Level_Kanji extends AppCompatActivity {
-    Button button6;
-    Button button5;
-    Button button4;
-    Button button3;
-    Button button2;
-    Button button1;
+//    Button button6;
+//    Button button5;
+//    Button button4;
+//    Button button3;
+//    Button button2;
+    LinearLayout level01,level02,level03,level04,level05,level06,level07;
 
-    Button backbutton;
+    ImageView backbutton;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_kanji);
-        button1 = findViewById(R.id.button1);
-        button2 = findViewById(R.id.button2);
-        button3 = findViewById(R.id.button3);
-        button4 = findViewById(R.id.button4);
-        button5 = findViewById(R.id.button5);
-        button6 = findViewById(R.id.button6);
-        backbutton = findViewById(R.id.backbutton);
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Level1.class);
-                startActivity(intent);
-            }
-        });
+        level01 = findViewById(R.id.btn01);
+        level02 = findViewById(R.id.btn02);
+        level03 = findViewById(R.id.btn03);
+        level04 = findViewById(R.id.btn04);
+        level05 = findViewById(R.id.btn05);
+        level06 = findViewById(R.id.btn06);
+        level07 = findViewById(R.id.btn07);
+        backbutton = findViewById(R.id.btnBack);
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Level2.class);
-                startActivity(intent);
-            }
-        });
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Level3.class);
-                startActivity(intent);
-            }
-        });
-
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Level4.class);
-                startActivity(intent);
-            }
-        });
-
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Level5.class);
-                startActivity(intent);
-            }
-        });
-
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Note.class);
-                startActivity(intent);
-                finish();
-            }
+        level01.setOnClickListener(view -> {
+            Intent intent = new Intent(Level_Kanji.this, Level1.class);
+            startActivity(intent);
         });
 
         backbutton.setOnClickListener(new View.OnClickListener() {

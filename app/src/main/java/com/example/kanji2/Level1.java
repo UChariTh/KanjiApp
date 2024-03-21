@@ -116,7 +116,7 @@ public class Level1 extends AppCompatActivity {
     private void navigateToLevel(String levelTag) {
         Intent intent = null;
         switch (letter) {
-            case "一":
+            case "-":
                 intent = new Intent(getApplicationContext(), Itchi.class);
                 intent.putExtra("selectedLevel",letter);
                 break;
