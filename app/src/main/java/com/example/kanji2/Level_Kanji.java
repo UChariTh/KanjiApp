@@ -6,16 +6,10 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Level_Kanji extends AppCompatActivity {
-//    Button button6;
-//    Button button5;
-//    Button button4;
-//    Button button3;
-//    Button button2;
     LinearLayout level01,level02,level03,level04,level05,level06,level07;
 
     ImageView backbutton;
@@ -36,7 +30,7 @@ public class Level_Kanji extends AppCompatActivity {
         backbutton = findViewById(R.id.btnBack);
 
         level01.setOnClickListener(view -> {
-            Intent intent = new Intent(Level_Kanji.this, Level1.class);
+            Intent intent = new Intent(Level_Kanji.this, Numbers.class);
             startActivity(intent);
         });
 

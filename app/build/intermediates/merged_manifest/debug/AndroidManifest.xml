@@ -34,7 +34,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Material3.Light" >
         <activity
-            android:name="com.example.kanji2.Level1"
+            android:name="com.example.kanji2.Numbers"
             android:exported="false"
             android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity

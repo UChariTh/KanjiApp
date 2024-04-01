@@ -4,12 +4,12 @@
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\raw\\futhago.mp4"
     },
     {
-        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_kyu.gif.flat",
-        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\drawable\\kyu.gif"
-    },
-    {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\layout_activity_roku.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\layout\\activity_roku.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_kyu.gif.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\drawable\\kyu.gif"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_hachi.gif.flat",
@@ -164,10 +164,6 @@
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\drawable\\erasebg.xml"
     },
     {
-        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\layout_activity_level1.xml.flat",
-        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\layout\\activity_level1.xml"
-    },
-    {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\raw_gorin.mp4.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\raw\\gorin.mp4"
     },
@@ -208,16 +204,16 @@
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.kanji2.app-merged_res-35:/layout_activity_main.xml.flat",
-        "source": "com.example.kanji2.app-main-37:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\layout_activity_level_kanji.xml.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\layout\\activity_level_kanji.xml"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\layout_activity_numbers.xml.flat",
+        "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\layout\\activity_numbers.xml"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\raw_kiu.mp4.flat",
@@ -250,6 +246,10 @@
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\drawable_japan.jpg.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\drawable\\japan.jpg"
+    },
+    {
+        "merged": "com.example.kanji2.app-merged_res-35:/layout_activity_sun.xml.flat",
+        "source": "com.example.kanji2.app-main-37:/layout/activity_sun.xml"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\layout_activity_itchi.xml.flat",
@@ -286,6 +286,10 @@
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\raw_shigathu.mp4.flat",
         "source": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-main-37:\\raw\\shigathu.mp4"
+    },
+    {
+        "merged": "com.example.kanji2.app-merged_res-35:/layout_activity_shi.xml.flat",
+        "source": "com.example.kanji2.app-main-37:/layout/activity_shi.xml"
     },
     {
         "merged": "C:\\Users\\USER\\.gradle\\daemon\\7.5\\com.example.kanji2.app-merged_res-35:\\font_acme.xml.flat",

@@ -65,6 +65,18 @@ id btn04
 id btn05
 id btn06
 id btn07
+id btn08
+id btn09
+id btn10
+id btn11
+id btn12
+id btn13
+id btn14
+id btn15
+id btn16
+id btn17
+id btn18
+id btn19
 id btnBack
 id btnErase
 id btnLogOut
@@ -103,11 +115,6 @@ id cw10
 id cw11
 id cw12
 id cw13
-id cw14
-id cw15
-id cw16
-id cw17
-id cw18
 id editText
 id email
 id get_started
@@ -160,7 +167,6 @@ layout activity_kai
 layout activity_kao
 layout activity_kuroi
 layout activity_kyu
-layout activity_level1
 layout activity_level2
 layout activity_level3
 layout activity_level4
@@ -176,6 +182,7 @@ layout activity_note2
 layout activity_note3
 layout activity_note4
 layout activity_note_editor
+layout activity_numbers
 layout activity_register
 layout activity_roku
 layout activity_shi

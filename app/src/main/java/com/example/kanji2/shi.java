@@ -7,16 +7,16 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class shi extends AppCompatActivity {
 
 
-    Button backbutton;
+    ImageView backbutton;
     Button buttonAudio;
     Button buttonAudio2;
     Button buttonAudio3;
     Button buttonAudio4;
-    Button button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,6 @@ public class shi extends AppCompatActivity {
         buttonAudio2 = findViewById(R.id.buttonAudio2);
         buttonAudio3 = findViewById(R.id.buttonAudio3);
         buttonAudio4 = findViewById(R.id.buttonAudio4);
-        button6 = findViewById(R.id.button6);
 
         MediaPlayer mediaPlayer1 = MediaPlayer.create(this,R.raw.shi);
         MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.shiki);
@@ -78,15 +77,6 @@ public class shi extends AppCompatActivity {
         buttonAudio4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {mediaPlayer4.start();
-            }
-        });
-
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Note.class);
-                startActivity(intent);
-                finish();
             }
         });
 
