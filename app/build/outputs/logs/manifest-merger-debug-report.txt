@@ -185,14 +185,14 @@ MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\USER\.gradle\caches\
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:19:9-53
 	android:dataExtractionRules
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:14:9-65
-activity#com.example.kanji2.Level1
+activity#com.example.kanji2.Numbers
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:21:9-24:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:23:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:24:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:22:13-35
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:22:13-36
 activity#com.example.kanji2.hon
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:25:9-28:72
 	android:exported

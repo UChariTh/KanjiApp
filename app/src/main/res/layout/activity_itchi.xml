@@ -31,7 +31,7 @@
             android:id="@+id/textView3"
             android:layout_width="329dp"
             android:layout_height="37dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="13dp"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
             android:text="Ichi kanji"
@@ -159,7 +159,6 @@
             app:icon="@android:drawable/ic_lock_silent_mode_off"
             app:iconPadding="@android:dimen/notification_large_icon_width"
             app:iconTint="@color/black"
-
             app:layout_constraintBottom_toTopOf="@+id/textView9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7"

@@ -35,7 +35,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
-        android:text="Level 1  kanji"
+        android:text="Number   衆"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +95,7 @@
                     android:layout_marginTop="00dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="5dp"
-                    android:text="一          itchi"
+                    android:text="1                一          itchi"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -123,7 +123,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="ニ              ni"
+                    android:text="2               ニ              ni"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -152,7 +152,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="三           sun"
+                    android:text="3               三           sun"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -267,10 +267,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="Level 07"
+                    android:text="七      shichi"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -296,10 +296,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="Level 08"
+                    android:text="八       hachi "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -325,10 +325,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="Level 09"
+                    android:text="九            kiu  "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -354,10 +354,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="Level 10"
+                    android:text="十              ju "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -383,10 +383,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="Level 11"
+                    android:text="百      hiyaku  "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -412,10 +412,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="Level 12"
+                    android:text="千           sen  "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -441,162 +441,163 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="Level 13"
+                    android:text="10000     万         man "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cw14"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_row="4"
-                android:layout_rowWeight="1"
-                android:layout_column="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="5dp"
-                android:tag="level14">
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cw14"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_row="4"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_column="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="5dp"-->
+<!--                android:tag="level14">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="sans-serif-black"
-                    android:padding="7dp"
-                    android:text="Level 14"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="sans-serif-black"-->
+<!--                    android:padding="7dp"-->
+<!--                    android:text="Level 14"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp" />-->
 
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cw15"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_row="4"
-                android:layout_rowWeight="1"
-                android:layout_column="2"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="5dp"
-                android:tag="level15">
+<!--            </androidx.cardview.widget.CardView>-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cw15"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_row="4"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_column="2"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="5dp"-->
+<!--                android:tag="level15">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="sans-serif-black"
-                    android:padding="7dp"
-                    android:text="Level 15"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="sans-serif-black"-->
+<!--                    android:padding="7dp"-->
+<!--                    android:text="Level 15"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp" />-->
 
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cw16"
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_row="5"
-                android:layout_rowWeight="1"
-                android:layout_column="0"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="5dp"
-                android:tag="level16">
+<!--            </androidx.cardview.widget.CardView>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="sans-serif-black"
-                    android:padding="7dp"
-                    android:text="Level 16"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cw16"-->
+<!--                android:layout_width="10dp"-->
+<!--                android:layout_height="10dp"-->
+<!--                android:layout_row="5"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_column="0"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="5dp"-->
+<!--                android:tag="level16">-->
 
-            </androidx.cardview.widget.CardView>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="sans-serif-black"-->
+<!--                    android:padding="7dp"-->
+<!--                    android:text="Level 16"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp" />-->
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cw17"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_row="5"
-                android:layout_rowWeight="1"
-                android:layout_column="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="5dp"
-                android:tag="level17">
+<!--            </androidx.cardview.widget.CardView>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="sans-serif-black"
-                    android:padding="7dp"
-                    android:text="Level 17"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cw17"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_row="5"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_column="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="5dp"-->
+<!--                android:tag="level17">-->
 
-            </androidx.cardview.widget.CardView>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="sans-serif-black"-->
+<!--                    android:padding="7dp"-->
+<!--                    android:text="Level 17"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp" />-->
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cw18"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_row="5"
-                android:layout_rowWeight="1"
-                android:layout_column="2"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="5dp"
-                android:tag="level18">
+<!--            </androidx.cardview.widget.CardView>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="sans-serif-black"
-                    android:padding="7dp"
-                    android:text="Level 18"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cw18"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_row="5"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_column="2"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="5dp"-->
+<!--                android:tag="level18">-->
 
-            </androidx.cardview.widget.CardView>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="sans-serif-black"-->
+<!--                    android:padding="7dp"-->
+<!--                    android:text="Level 18"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
 
 
 
