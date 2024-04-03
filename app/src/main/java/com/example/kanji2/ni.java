@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class ni extends AppCompatActivity {
 
@@ -16,6 +18,8 @@ public class ni extends AppCompatActivity {
     Button buttonAudio2;
     Button buttonAudio3;
     Button buttonAudio4;
+    LinearLayout start;
+    String letter;
 
 
 
@@ -24,22 +28,40 @@ public class ni extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ni);
 
+        if(getIntent()!=null) {
+            letter=getIntent().getStringExtra("selectedLevel");
+            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
+        }
+
+
         backbutton = findViewById(R.id.backbutton);
         buttonAudio = findViewById(R.id.buttonAudio);
         buttonAudio2 = findViewById(R.id.buttonAudio2);
         buttonAudio3 = findViewById(R.id.buttonAudio3);
         buttonAudio4 = findViewById(R.id.buttonAudio4);
+        start= findViewById(R.id.navigateGame);
 
         MediaPlayer mediaPlayer1 = MediaPlayer.create(this,R.raw.ni);
         MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.jinan);
         MediaPlayer mediaPlayer3 = MediaPlayer.create(this,R.raw.futhago);
         MediaPlayer mediaPlayer4 = MediaPlayer.create(this,R.raw.nikai);
 
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Check_Letter.class);
+                intent.putExtra("selectedLevel",letter);
+                startActivity(intent);
+
+
+            }
+        });
+
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Numbers.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), Numbers.class);
+//                startActivity(intent);
                 finish();
             }
         });

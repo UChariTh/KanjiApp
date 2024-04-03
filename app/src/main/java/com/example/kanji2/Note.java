@@ -53,8 +53,8 @@ public class Note extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
-        getSupportActionBar().setTitle("Note");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setTitle("Note");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         backbutton = findViewById(R.id.backbutton);
 
@@ -121,8 +121,8 @@ public class Note extends AppCompatActivity {
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Itchi.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), Itchi.class);
+//                startActivity(intent);
                 finish();
             }
         });

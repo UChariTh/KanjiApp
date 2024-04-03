@@ -2977,6 +2977,7 @@ int drawable design_ic_visibility_off 0x7f08009c
 int drawable design_password_eye 0x7f08009d
 int drawable design_snackbar_background 0x7f08009e
 int drawable dou 0x7f08009f
+int drawable edit 0x7f08011d
 int drawable erasebg 0x7f0800a0
 int drawable eraser 0x7f0800a1
 int drawable eraserimage 0x7f0800a2
@@ -2984,6 +2985,7 @@ int drawable go 0x7f0800a3
 int drawable googleg_disabled_color_18 0x7f0800a4
 int drawable googleg_standard_color_18 0x7f0800a5
 int drawable hachi 0x7f0800a6
+int drawable hiyaku 0x7f080119
 int drawable hon 0x7f0800a7
 int drawable ic_arrow_back_black_24 0x7f0800a8
 int drawable ic_clear_black_24 0x7f0800a9
@@ -3025,6 +3027,7 @@ int drawable m3_tabs_background 0x7f0800cc
 int drawable m3_tabs_line_indicator 0x7f0800cd
 int drawable m3_tabs_rounded_line_indicator 0x7f0800ce
 int drawable m3_tabs_transparent_background 0x7f0800cf
+int drawable man 0x7f08011a
 int drawable material_cursor_drawable 0x7f0800d0
 int drawable material_ic_calendar_black_24dp 0x7f0800d1
 int drawable material_ic_clear_black_24dp 0x7f0800d2
@@ -3075,6 +3078,7 @@ int drawable mtrl_tabs_default_indicator 0x7f0800fe
 int drawable nana 0x7f0800ff
 int drawable navigation_empty_icon 0x7f080100
 int drawable ni 0x7f080101
+int drawable note 0x7f08011c
 int drawable notification_action_background 0x7f080102
 int drawable notification_bg 0x7f080103
 int drawable notification_bg_low 0x7f080104
@@ -3091,6 +3095,7 @@ int drawable pink_user 0x7f08010e
 int drawable roku 0x7f08010f
 int drawable round_button 0x7f080110
 int drawable select_card_view 0x7f080111
+int drawable sen 0x7f08011b
 int drawable shi 0x7f080112
 int drawable sun 0x7f080113
 int drawable test_level_drawable 0x7f080114
@@ -3497,6 +3502,7 @@ int id noState 0x7f0a0188
 int id none 0x7f0a0189
 int id normal 0x7f0a018a
 int id north 0x7f0a018b
+int id notebutton 0x7f0a0259
 int id notification_background 0x7f0a018c
 int id notification_main_column 0x7f0a018d
 int id notification_main_column_container 0x7f0a018e
@@ -3821,6 +3827,7 @@ int layout activity_check_letter 0x7f0d001d
 int layout activity_dou 0x7f0d001e
 int layout activity_go 0x7f0d001f
 int layout activity_hchi 0x7f0d0020
+int layout activity_hiyaku 0x7f0d008e
 int layout activity_hon 0x7f0d0021
 int layout activity_instructions 0x7f0d0022
 int layout activity_itchi 0x7f0d0023
@@ -3837,6 +3844,7 @@ int layout activity_level5 0x7f0d002d
 int layout activity_level_kanji 0x7f0d002e
 int layout activity_login 0x7f0d002f
 int layout activity_main 0x7f0d0030
+int layout activity_man 0x7f0d008f
 int layout activity_nana 0x7f0d0031
 int layout activity_nen 0x7f0d0032
 int layout activity_ni 0x7f0d0033
@@ -3848,6 +3856,7 @@ int layout activity_note_editor 0x7f0d0038
 int layout activity_numbers 0x7f0d0039
 int layout activity_register 0x7f0d003a
 int layout activity_roku 0x7f0d003b
+int layout activity_sen 0x7f0d0090
 int layout activity_shi 0x7f0d003c
 int layout activity_splash_screen 0x7f0d003d
 int layout activity_sun 0x7f0d003e
@@ -3947,9 +3956,11 @@ int raw hachi 0x7f120008
 int raw hachigatsu 0x7f120009
 int raw hachiji 0x7f12000a
 int raw hithothu 0x7f12000b
+int raw hiyaku 0x7f12002a
 int raw ichiin 0x7f12000c
 int raw itchi 0x7f12000d
 int raw jinan 0x7f12000e
+int raw ju 0x7f12002d
 int raw juhachi 0x7f12000f
 int raw kai 0x7f120010
 int raw kao 0x7f120011
@@ -3959,6 +3970,7 @@ int raw koto 0x7f120014
 int raw kugatsu 0x7f120015
 int raw kuku 0x7f120016
 int raw kuroi 0x7f120017
+int raw man 0x7f12002b
 int raw mikazuki 0x7f120018
 int raw muika 0x7f120019
 int raw nanaju 0x7f12001a
@@ -3968,6 +3980,7 @@ int raw nikai 0x7f12001d
 int raw roku 0x7f12001e
 int raw rokugatsu 0x7f12001f
 int raw rokunin 0x7f120020
+int raw sen 0x7f12002c
 int raw shi 0x7f120021
 int raw shichi 0x7f120022
 int raw shigathu 0x7f120023

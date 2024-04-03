@@ -17,6 +17,17 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
+            android:id="@+id/notebutton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
             android:id="@+id/backbutton"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -50,21 +61,21 @@
         android:layout_marginTop="65dp"
         app:layout_constraintTop_toTopOf="parent">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
-        android:layout_width="165dp"
-        android:layout_height="146dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="138dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="28dp"
-        android:src="@drawable/sun"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="165dp"
+            android:layout_height="146dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="138dp"
+            android:layout_marginEnd="108dp"
+            android:src="@drawable/sun"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-2dp" />
 
-    <TextView
+        <TextView
         android:id="@+id/textView5"
         android:layout_width="145dp"
         android:layout_height="37dp"

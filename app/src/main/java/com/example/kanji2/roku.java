@@ -7,53 +7,64 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class roku extends AppCompatActivity {
 
 
-    Button backbutton;
+    ImageView backbutton;
     Button buttonAudio;
     Button buttonAudio2;
     Button buttonAudio3;
     Button buttonAudio4;
-    Button button6;
+    LinearLayout start;
+    String letter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_roku);
 
+        if(getIntent()!=null) {
+            letter=getIntent().getStringExtra("selectedLevel");
+            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
+        }
+
         backbutton = findViewById(R.id.backbutton);
         buttonAudio = findViewById(R.id.buttonAudio);
         buttonAudio2 = findViewById(R.id.buttonAudio2);
         buttonAudio3 = findViewById(R.id.buttonAudio3);
         buttonAudio4 = findViewById(R.id.buttonAudio4);
-        button6 = findViewById(R.id.button6);
+        start= findViewById(R.id.navigateGame);
 
         MediaPlayer mediaPlayer1 = MediaPlayer.create(this,R.raw.roku);
         MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.rokugatsu);
         MediaPlayer mediaPlayer3 = MediaPlayer.create(this,R.raw.muika);
         MediaPlayer mediaPlayer4 = MediaPlayer.create(this,R.raw.rokunin);
 
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Check_Letter.class);
+                intent.putExtra("selectedLevel",letter);
+                startActivity(intent);
+
+
+            }
+        });
+
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Level5.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), Level5.class);
+//                startActivity(intent);
                 finish();
             }
         });
 
-
-
-        backbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Level5.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         buttonAudio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,14 +92,6 @@ public class roku extends AppCompatActivity {
             }
         });
 
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Note.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
     }
 

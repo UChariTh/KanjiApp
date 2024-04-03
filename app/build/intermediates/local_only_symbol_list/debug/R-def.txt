@@ -20,11 +20,13 @@ drawable black_board
 drawable block04but
 drawable clickerasebg
 drawable dou
+drawable edit
 drawable erasebg
 drawable eraser
 drawable eraserimage
 drawable go
 drawable hachi
+drawable hiyaku
 drawable hon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -43,12 +45,15 @@ drawable kyu
 drawable layout_bg
 drawable levelcorner
 drawable logout
+drawable man
 drawable nana
 drawable ni
+drawable note
 drawable pink_user
 drawable roku
 drawable round_button
 drawable select_card_view
+drawable sen
 drawable shi
 drawable sun
 drawable user
@@ -129,6 +134,7 @@ id listView
 id loginNow
 id navigateGame
 id navigateLetter
+id notebutton
 id password
 id progressBar
 id registerNow
@@ -158,6 +164,7 @@ layout activity_check_letter
 layout activity_dou
 layout activity_go
 layout activity_hchi
+layout activity_hiyaku
 layout activity_hon
 layout activity_instructions
 layout activity_itchi
@@ -174,6 +181,7 @@ layout activity_level5
 layout activity_level_kanji
 layout activity_login
 layout activity_main
+layout activity_man
 layout activity_nana
 layout activity_nen
 layout activity_ni
@@ -185,6 +193,7 @@ layout activity_note_editor
 layout activity_numbers
 layout activity_register
 layout activity_roku
+layout activity_sen
 layout activity_shi
 layout activity_splash_screen
 layout activity_sun
@@ -203,9 +212,11 @@ raw hachi
 raw hachigatsu
 raw hachiji
 raw hithothu
+raw hiyaku
 raw ichiin
 raw itchi
 raw jinan
+raw ju
 raw juhachi
 raw kai
 raw kao
@@ -215,6 +226,7 @@ raw koto
 raw kugatsu
 raw kuku
 raw kuroi
+raw man
 raw mikazuki
 raw muika
 raw nanaju
@@ -224,6 +236,7 @@ raw nikai
 raw roku
 raw rokugatsu
 raw rokunin
+raw sen
 raw shi
 raw shichi
 raw shigathu

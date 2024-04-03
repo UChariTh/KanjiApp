@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
-INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
-INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
-INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
+INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
+INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
+INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\USER\.gradle\caches\transforms-3\d488f2c4c46007d73eddcd94b832f4ea\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\USER\.gradle\caches\transforms-3\3229d8dbfb0c633e276edfd3e6294908\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\USER\.gradle\caches\transforms-3\bc14915fedc1798a01b1f6b5d446b360\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -66,22 +66,22 @@ MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\USER\.gradle\caches\transform
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\USER\.gradle\caches\transforms-3\303c89b29b1f94f8856e637193912e8d\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\USER\.gradle\caches\transforms-3\f7bec67e6ae85da5332e437f50c66b0d\transformed\tensorflow-lite-2.4.0\AndroidManifest.xml:2:1-12:12
 MERGED from [pl.droidsonroids.relinker:relinker:1.4.1] C:\Users\USER\.gradle\caches\transforms-3\dc9a497c88801893fc35a5a0215d1aa4\transformed\relinker-1.4.1\AndroidManifest.xml:2:1-7:12
-INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
-INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
-INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
+INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
+INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
+INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
 	package
 		INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
 		INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
 		INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-168:12
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:1-183:12
 		INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -128,7 +128,7 @@ ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:10:5-68
 	android:name
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:10:22-65
 application
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:12:5-166:19
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:12:5-181:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\USER\.gradle\caches\transforms-3\d488f2c4c46007d73eddcd94b832f4ea\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\USER\.gradle\caches\transforms-3\d488f2c4c46007d73eddcd94b832f4ea\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\USER\.gradle\caches\transforms-3\3229d8dbfb0c633e276edfd3e6294908\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -185,39 +185,39 @@ MERGED from [org.tensorflow:tensorflow-lite:2.4.0] C:\Users\USER\.gradle\caches\
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:19:9-53
 	android:dataExtractionRules
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:14:9-65
-activity#com.example.kanji2.Numbers
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:21:9-24:72
+activity#com.example.kanji2.Man
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:21:9-24:71
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:23:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:24:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:22:13-36
-activity#com.example.kanji2.hon
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:25:9-28:72
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:22:13-32
+activity#com.example.kanji2.Sen
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:25:9-28:71
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:27:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:28:13-69
 	android:name
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:26:13-32
-activity#com.example.kanji2.nen
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:29:9-32:72
+activity#com.example.kanji2.Hiyaku
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:29:9-32:71
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:31:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:32:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:30:13-32
-activity#com.example.kanji2.ju
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:30:13-35
+activity#com.example.kanji2.Numbers
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:33:9-36:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:35:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:36:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:34:13-31
-activity#com.example.kanji2.kyu
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:34:13-36
+activity#com.example.kanji2.hon
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:37:9-40:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:39:13-37
@@ -225,105 +225,105 @@ ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:37:9-40:72
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:40:13-69
 	android:name
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:38:13-32
-activity#com.example.kanji2.hchi
+activity#com.example.kanji2.nen
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:41:9-44:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:43:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:44:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:42:13-33
-activity#com.example.kanji2.nana
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:42:13-32
+activity#com.example.kanji2.ju
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:45:9-48:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:47:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:48:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:46:13-33
-activity#com.example.kanji2.roku
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:46:13-31
+activity#com.example.kanji2.kyu
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:49:9-52:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:51:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:52:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:50:13-33
-activity#com.example.kanji2.Go
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:50:13-32
+activity#com.example.kanji2.hchi
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:53:9-56:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:55:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:56:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:54:13-31
-activity#com.example.kanji2.shi
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:54:13-33
+activity#com.example.kanji2.nana
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:57:9-60:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:59:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:60:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:58:13-32
-activity#com.example.kanji2.Note4
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:61:9-63:40
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:58:13-33
+activity#com.example.kanji2.roku
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:61:9-64:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:63:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:64:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:62:13-34
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:62:13-33
+activity#com.example.kanji2.Go
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:65:9-68:72
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:67:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:68:13-69
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:66:13-31
+activity#com.example.kanji2.shi
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:69:9-72:72
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:71:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:72:13-69
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:70:13-32
+activity#com.example.kanji2.Note4
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:73:9-75:40
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:75:13-37
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:74:13-34
 activity#com.example.kanji2.Note3
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:64:9-66:40
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:76:9-78:40
 	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:66:13-37
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:78:13-37
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:65:13-34
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:77:13-34
 activity#com.example.kanji2.Note2
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:67:9-69:40
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:79:9-81:40
 	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:69:13-37
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:81:13-37
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:68:13-34
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:80:13-34
 activity#com.example.kanji2.Instructions
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:70:9-73:72
-	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:72:13-37
-	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:73:13-69
-	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:71:13-41
-activity#com.example.kanji2.ji
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:74:9-77:72
-	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:76:13-37
-	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:77:13-69
-	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:75:13-31
-activity#com.example.kanji2.dou
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:78:9-81:72
-	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:80:13-37
-	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:81:13-69
-	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:79:13-32
-activity#com.example.kanji2.kai
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:82:9-85:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:84:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:85:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:83:13-32
-activity#com.example.kanji2.akai
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:83:13-41
+activity#com.example.kanji2.ji
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:86:9-89:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:88:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:89:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:87:13-33
-activity#com.example.kanji2.kao
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:87:13-31
+activity#com.example.kanji2.dou
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:90:9-93:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:92:13-37
@@ -331,91 +331,89 @@ ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:90:9-93:72
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:93:13-69
 	android:name
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:91:13-32
-activity#com.example.kanji2.kuroi
+activity#com.example.kanji2.kai
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:94:9-97:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:96:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:97:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:95:13-34
-activity#com.example.kanji2.sun
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:95:13-32
+activity#com.example.kanji2.akai
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:98:9-101:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:100:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:101:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:99:13-32
-activity#com.example.kanji2.NoteEditor
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:102:9-104:40
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:99:13-33
+activity#com.example.kanji2.kao
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:102:9-105:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:104:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:105:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:103:13-39
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:103:13-32
+activity#com.example.kanji2.kuroi
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:106:9-109:72
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:108:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:109:13-69
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:107:13-34
+activity#com.example.kanji2.sun
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:110:9-113:72
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:112:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:113:13-69
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:111:13-32
+activity#com.example.kanji2.NoteEditor
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:114:9-117:72
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:116:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:117:13-69
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:115:13-39
 activity#com.example.kanji2.Note
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:105:9-107:51
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:118:9-123:15
 	android:parentActivityName
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:107:13-48
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:120:13-48
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:121:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:122:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:106:13-33
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:119:13-33
 activity#com.example.kanji2.ni
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:108:9-111:72
-	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:110:13-37
-	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:111:13-69
-	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:109:13-31
-activity#com.example.kanji2.Check_Letter
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:112:9-115:72
-	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:114:13-37
-	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:115:13-69
-	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:113:13-41
-activity#com.example.kanji2.Level2
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:116:9-119:72
-	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:118:13-37
-	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:119:13-69
-	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:117:13-35
-activity#com.example.kanji2.Level3
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:120:9-123:72
-	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:122:13-37
-	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:123:13-69
-	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:121:13-35
-activity#com.example.kanji2.Level4
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:124:9-127:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:126:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:127:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:125:13-35
-activity#com.example.kanji2.Itchi
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:125:13-31
+activity#com.example.kanji2.Check_Letter
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:128:9-131:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:130:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:131:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:129:13-34
-activity#com.example.kanji2.Level_Kanji
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:129:13-41
+activity#com.example.kanji2.Level2
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:132:9-135:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:134:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:135:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:133:13-40
-activity#com.example.kanji2.Level5
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:133:13-35
+activity#com.example.kanji2.Level3
 ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:136:9-139:72
 	android:exported
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:138:13-37
@@ -423,54 +421,86 @@ ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:136:9-139:72
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:139:13-69
 	android:name
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:137:13-35
-activity#com.example.kanji2.splash_screen
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:140:9-149:20
+activity#com.example.kanji2.Level4
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:140:9-143:72
 	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:142:13-36
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:142:13-37
 	android:theme
 		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:143:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:141:13-42
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:141:13-35
+activity#com.example.kanji2.Itchi
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:144:9-147:72
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:146:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:147:13-69
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:145:13-34
+activity#com.example.kanji2.Level_Kanji
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:148:9-151:72
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:150:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:151:13-69
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:149:13-40
+activity#com.example.kanji2.Level5
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:152:9-155:72
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:154:13-37
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:155:13-69
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:153:13-35
+activity#com.example.kanji2.splash_screen
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:156:9-164:20
+	android:exported
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:158:13-36
+	android:theme
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:159:13-69
+	android:name
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:157:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:144:13-148:29
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:160:13-163:29
 action#android.intent.action.MAIN
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:145:17-69
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:161:17-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:145:25-66
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:161:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:147:17-77
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:162:17-77
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:147:27-74
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:162:27-74
 activity#com.example.kanji2.Register
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:150:9-153:72
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:165:9-168:72
 	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:152:13-37
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:167:13-37
 	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:153:13-69
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:168:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:151:13-37
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:166:13-37
 activity#com.example.kanji2.Login
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:154:9-157:72
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:169:9-172:72
 	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:156:13-36
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:171:13-36
 	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:157:13-69
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:172:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:155:13-34
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:170:13-34
 activity#com.example.kanji2.MainActivity
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:158:9-161:72
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:173:9-176:72
 	android:exported
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:160:13-36
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:175:13-36
 	android:theme
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:161:13-69
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:176:13-69
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:159:13-41
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:174:13-41
 meta-data#preloaded_fonts
-ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:163:9-165:57
+ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:178:9-180:57
 	android:resource
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:165:13-54
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:180:13-54
 	android:name
-		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:164:13-43
+		ADDED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:179:13-43
 uses-sdk
 INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml

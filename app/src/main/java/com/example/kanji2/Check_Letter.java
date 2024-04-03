@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.kanji2.LocalDatabase.Constants;
 import com.example.kanji2.ml.HandWrittenTfLiteModelLite;
+import com.example.kanji2.ml.Model;
 
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
@@ -114,16 +115,17 @@ public class Check_Letter extends AppCompatActivity {
 
         switch(letter)
         {
-            case "-":
+            case "一":
+            case "七":
+            case "九":
+            case "ニ":
+            case "三":
+            case "五":
                 if (userAnswer.equals(letter)) {
                     Toast.makeText(this, "Your are correct !", Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(this, "Try again !", Toast.LENGTH_SHORT).show();
                 }
-                break;
-
-            case "ニ":
-
                 break;
 
 
@@ -133,14 +135,14 @@ public class Check_Letter extends AppCompatActivity {
 
     public String classifyImage(Bitmap image) {
         try {
-            HandWrittenTfLiteModelLite model = HandWrittenTfLiteModelLite.newInstance(Check_Letter.this);
+            Model model = Model.newInstance(Check_Letter.this);
 
             // Resize the image to the preferred size (150x150)
-            int imageSize = 150;
+            int imageSize = 64;
             Bitmap resizedBitmap = Bitmap.createScaledBitmap(image, imageSize, imageSize, true);
 
             // Creates inputs for reference.
-            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 150, 150, 1}, DataType.FLOAT32);
+            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 64, 64, 1}, DataType.FLOAT32);
             ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize);
             byteBuffer.order(ByteOrder.nativeOrder());
 
@@ -161,7 +163,7 @@ public class Check_Letter extends AppCompatActivity {
             inputFeature0.loadBuffer(byteBuffer);
 
             // Runs model inference and gets result.
-            HandWrittenTfLiteModelLite.Outputs outputs = model.process(inputFeature0);
+            Model.Outputs outputs = model.process(inputFeature0);
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
             float[] confidences = outputFeature0.getFloatArray();
             int maxPossibility = 0;
@@ -175,12 +177,14 @@ public class Check_Letter extends AppCompatActivity {
                     isHaveProbability = true;
                 }
             }
+            Toast.makeText(this, ""+maxPossibility, Toast.LENGTH_SHORT).show();
 //            System.out.println("result : "+ maxPossibility);
 //            System.out.println("result : "+ Constants.resultMappedClass[maxPossibility]);
             model.close();
             if (!isHaveProbability && confidences[0] == 0)
                 return "-1";
             return Constants.resultMappedClass[maxPossibility];
+
         } catch (IOException e) {
             // TODO Handle the exception
 //            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();

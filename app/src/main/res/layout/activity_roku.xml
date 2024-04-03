@@ -16,6 +16,17 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
+            android:id="@+id/notebutton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
             android:id="@+id/backbutton"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -231,6 +242,29 @@ mutsu, mui"
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <LinearLayout
+        android:id="@+id/navigateGame"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/block04but"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
 
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/acme"
+            android:padding="7dp"
+            android:paddingStart="50dp"
+            android:textAlignment="center"
+            android:text="Check knowledge"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

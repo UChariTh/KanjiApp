@@ -2978,6 +2978,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dou
+drawable edit
 drawable erasebg
 drawable eraser
 drawable eraserimage
@@ -2985,6 +2986,7 @@ drawable go
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable hachi
+drawable hiyaku
 drawable hon
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
@@ -3026,6 +3028,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable man
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3076,6 +3079,7 @@ drawable mtrl_tabs_default_indicator
 drawable nana
 drawable navigation_empty_icon
 drawable ni
+drawable note
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3092,6 +3096,7 @@ drawable pink_user
 drawable roku
 drawable round_button
 drawable select_card_view
+drawable sen
 drawable shi
 drawable sun
 drawable test_level_drawable
@@ -3498,6 +3503,7 @@ id noState
 id none
 id normal
 id north
+id notebutton
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3822,6 +3828,7 @@ layout activity_check_letter
 layout activity_dou
 layout activity_go
 layout activity_hchi
+layout activity_hiyaku
 layout activity_hon
 layout activity_instructions
 layout activity_itchi
@@ -3838,6 +3845,7 @@ layout activity_level5
 layout activity_level_kanji
 layout activity_login
 layout activity_main
+layout activity_man
 layout activity_nana
 layout activity_nen
 layout activity_ni
@@ -3849,6 +3857,7 @@ layout activity_note_editor
 layout activity_numbers
 layout activity_register
 layout activity_roku
+layout activity_sen
 layout activity_shi
 layout activity_splash_screen
 layout activity_sun
@@ -3948,9 +3957,11 @@ raw hachi
 raw hachigatsu
 raw hachiji
 raw hithothu
+raw hiyaku
 raw ichiin
 raw itchi
 raw jinan
+raw ju
 raw juhachi
 raw kai
 raw kao
@@ -3960,6 +3971,7 @@ raw koto
 raw kugatsu
 raw kuku
 raw kuroi
+raw man
 raw mikazuki
 raw muika
 raw nanaju
@@ -3969,6 +3981,7 @@ raw nikai
 raw roku
 raw rokugatsu
 raw rokunin
+raw sen
 raw shi
 raw shichi
 raw shigathu

@@ -41,7 +41,7 @@
 22-->[androidx.core:core:1.9.0] C:\Users\USER\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 23
 24    <application
-24-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:12:5-166:19
+24-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:12:5-181:19
 25        android:allowBackup="true"
 25-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:13:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -62,40 +62,40 @@
 35        android:theme="@style/Theme.Material3.Light" >
 35-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:19:9-53
 36        <activity
-36-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:21:9-24:72
-37            android:name="com.example.kanji2.Numbers"
-37-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:22:13-36
+36-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:21:9-24:71
+37            android:name="com.example.kanji2.Man"
+37-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:22:13-32
 38            android:exported="false"
 38-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:23:13-37
 39            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 39-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:24:13-69
 40        <activity
-40-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:25:9-28:72
-41            android:name="com.example.kanji2.hon"
+40-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:25:9-28:71
+41            android:name="com.example.kanji2.Sen"
 41-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:26:13-32
 42            android:exported="false"
 42-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:27:13-37
 43            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 43-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:28:13-69
 44        <activity
-44-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:29:9-32:72
-45            android:name="com.example.kanji2.nen"
-45-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:30:13-32
+44-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:29:9-32:71
+45            android:name="com.example.kanji2.Hiyaku"
+45-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:30:13-35
 46            android:exported="false"
 46-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:31:13-37
 47            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 47-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:32:13-69
 48        <activity
 48-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:33:9-36:72
-49            android:name="com.example.kanji2.ju"
-49-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:34:13-31
+49            android:name="com.example.kanji2.Numbers"
+49-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:34:13-36
 50            android:exported="false"
 50-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:35:13-37
 51            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 51-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:36:13-69
 52        <activity
 52-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:37:9-40:72
-53            android:name="com.example.kanji2.kyu"
+53            android:name="com.example.kanji2.hon"
 53-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:38:13-32
 54            android:exported="false"
 54-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:39:13-37
@@ -103,105 +103,105 @@
 55-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:40:13-69
 56        <activity
 56-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:41:9-44:72
-57            android:name="com.example.kanji2.hchi"
-57-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:42:13-33
+57            android:name="com.example.kanji2.nen"
+57-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:42:13-32
 58            android:exported="false"
 58-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:43:13-37
 59            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 59-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:44:13-69
 60        <activity
 60-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:45:9-48:72
-61            android:name="com.example.kanji2.nana"
-61-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:46:13-33
+61            android:name="com.example.kanji2.ju"
+61-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:46:13-31
 62            android:exported="false"
 62-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:47:13-37
 63            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 63-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:48:13-69
 64        <activity
 64-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:49:9-52:72
-65            android:name="com.example.kanji2.roku"
-65-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:50:13-33
+65            android:name="com.example.kanji2.kyu"
+65-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:50:13-32
 66            android:exported="false"
 66-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:51:13-37
 67            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 67-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:52:13-69
 68        <activity
 68-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:53:9-56:72
-69            android:name="com.example.kanji2.Go"
-69-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:54:13-31
+69            android:name="com.example.kanji2.hchi"
+69-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:54:13-33
 70            android:exported="false"
 70-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:55:13-37
 71            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 71-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:56:13-69
 72        <activity
 72-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:57:9-60:72
-73            android:name="com.example.kanji2.shi"
-73-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:58:13-32
+73            android:name="com.example.kanji2.nana"
+73-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:58:13-33
 74            android:exported="false"
 74-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:59:13-37
 75            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 75-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:60:13-69
 76        <activity
-76-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:61:9-63:40
-77            android:name="com.example.kanji2.Note4"
-77-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:62:13-34
-78            android:exported="false" />
+76-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:61:9-64:72
+77            android:name="com.example.kanji2.roku"
+77-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:62:13-33
+78            android:exported="false"
 78-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:63:13-37
-79        <activity
-79-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:64:9-66:40
-80            android:name="com.example.kanji2.Note3"
-80-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:65:13-34
-81            android:exported="false" />
-81-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:66:13-37
-82        <activity
-82-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:67:9-69:40
-83            android:name="com.example.kanji2.Note2"
-83-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:68:13-34
-84            android:exported="false" />
-84-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:69:13-37
-85        <activity
-85-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:70:9-73:72
-86            android:name="com.example.kanji2.Instructions"
-86-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:71:13-41
-87            android:exported="false"
-87-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:72:13-37
-88            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-88-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:73:13-69
-89        <activity
-89-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:74:9-77:72
-90            android:name="com.example.kanji2.ji"
-90-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:75:13-31
-91            android:exported="false"
-91-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:76:13-37
-92            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-92-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:77:13-69
-93        <activity
-93-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:78:9-81:72
-94            android:name="com.example.kanji2.dou"
-94-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:79:13-32
-95            android:exported="false"
-95-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:80:13-37
-96            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-96-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:81:13-69
+79            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+79-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:64:13-69
+80        <activity
+80-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:65:9-68:72
+81            android:name="com.example.kanji2.Go"
+81-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:66:13-31
+82            android:exported="false"
+82-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:67:13-37
+83            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+83-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:68:13-69
+84        <activity
+84-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:69:9-72:72
+85            android:name="com.example.kanji2.shi"
+85-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:70:13-32
+86            android:exported="false"
+86-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:71:13-37
+87            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+87-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:72:13-69
+88        <activity
+88-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:73:9-75:40
+89            android:name="com.example.kanji2.Note4"
+89-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:74:13-34
+90            android:exported="false" />
+90-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:75:13-37
+91        <activity
+91-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:76:9-78:40
+92            android:name="com.example.kanji2.Note3"
+92-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:77:13-34
+93            android:exported="false" />
+93-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:78:13-37
+94        <activity
+94-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:79:9-81:40
+95            android:name="com.example.kanji2.Note2"
+95-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:80:13-34
+96            android:exported="false" />
+96-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:81:13-37
 97        <activity
 97-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:82:9-85:72
-98            android:name="com.example.kanji2.kai"
-98-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:83:13-32
+98            android:name="com.example.kanji2.Instructions"
+98-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:83:13-41
 99            android:exported="false"
 99-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:84:13-37
 100            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 100-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:85:13-69
 101        <activity
 101-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:86:9-89:72
-102            android:name="com.example.kanji2.akai"
-102-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:87:13-33
+102            android:name="com.example.kanji2.ji"
+102-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:87:13-31
 103            android:exported="false"
 103-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:88:13-37
 104            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 104-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:89:13-69
 105        <activity
 105-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:90:9-93:72
-106            android:name="com.example.kanji2.kao"
+106            android:name="com.example.kanji2.dou"
 106-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:91:13-32
 107            android:exported="false"
 107-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:92:13-37
@@ -209,320 +209,350 @@
 108-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:93:13-69
 109        <activity
 109-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:94:9-97:72
-110            android:name="com.example.kanji2.kuroi"
-110-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:95:13-34
+110            android:name="com.example.kanji2.kai"
+110-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:95:13-32
 111            android:exported="false"
 111-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:96:13-37
 112            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 112-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:97:13-69
 113        <activity
 113-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:98:9-101:72
-114            android:name="com.example.kanji2.sun"
-114-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:99:13-32
+114            android:name="com.example.kanji2.akai"
+114-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:99:13-33
 115            android:exported="false"
 115-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:100:13-37
 116            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 116-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:101:13-69
 117        <activity
-117-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:102:9-104:40
-118            android:name="com.example.kanji2.NoteEditor"
-118-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:103:13-39
-119            android:exported="false" />
+117-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:102:9-105:72
+118            android:name="com.example.kanji2.kao"
+118-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:103:13-32
+119            android:exported="false"
 119-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:104:13-37
-120        <activity
-120-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:105:9-107:51
-121            android:name="com.example.kanji2.Note"
-121-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:106:13-33
-122            android:parentActivityName="com.example.kanji2.Itchi" />
-122-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:107:13-48
-123        <activity
-123-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:108:9-111:72
-124            android:name="com.example.kanji2.ni"
-124-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:109:13-31
-125            android:exported="false"
-125-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:110:13-37
-126            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-126-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:111:13-69
-127        <activity
-127-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:112:9-115:72
-128            android:name="com.example.kanji2.Check_Letter"
-128-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:113:13-41
-129            android:exported="false"
-129-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:114:13-37
-130            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-130-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:115:13-69
-131        <activity
-131-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:116:9-119:72
-132            android:name="com.example.kanji2.Level2"
-132-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:117:13-35
-133            android:exported="false"
-133-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:118:13-37
-134            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-134-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:119:13-69
-135        <activity
-135-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:120:9-123:72
-136            android:name="com.example.kanji2.Level3"
-136-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:121:13-35
-137            android:exported="false"
-137-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:122:13-37
-138            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-138-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:123:13-69
-139        <activity
-139-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:124:9-127:72
-140            android:name="com.example.kanji2.Level4"
-140-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:125:13-35
-141            android:exported="false"
-141-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:126:13-37
-142            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-142-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:127:13-69
-143        <activity
-143-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:128:9-131:72
-144            android:name="com.example.kanji2.Itchi"
-144-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:129:13-34
-145            android:exported="false"
-145-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:130:13-37
-146            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-146-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:131:13-69
-147        <activity
-147-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:132:9-135:72
-148            android:name="com.example.kanji2.Level_Kanji"
-148-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:133:13-40
-149            android:exported="false"
-149-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:134:13-37
-150            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-150-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:135:13-69
-151        <activity
-151-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:136:9-139:72
-152            android:name="com.example.kanji2.Level5"
-152-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:137:13-35
-153            android:exported="false"
-153-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:138:13-37
-154            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-154-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:139:13-69
-155        <activity
-155-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:140:9-149:20
-156            android:name="com.example.kanji2.splash_screen"
-156-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:141:13-42
-157            android:exported="true"
-157-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:142:13-36
-158            android:theme="@style/Theme.Material3.Light.NoActionBar" >
-158-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:143:13-69
-159            <intent-filter>
-159-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:144:13-148:29
-160                <action android:name="android.intent.action.MAIN" />
-160-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:145:17-69
-160-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:145:25-66
-161
-162                <category android:name="android.intent.category.LAUNCHER" />
-162-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:147:17-77
-162-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:147:27-74
-163            </intent-filter>
-164        </activity>
-165        <activity
-165-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:150:9-153:72
-166            android:name="com.example.kanji2.Register"
-166-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:151:13-37
-167            android:exported="false"
-167-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:152:13-37
-168            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-168-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:153:13-69
-169        <activity
-169-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:154:9-157:72
-170            android:name="com.example.kanji2.Login"
-170-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:155:13-34
-171            android:exported="true"
-171-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:156:13-36
-172            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-172-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:157:13-69
-173        <activity
-173-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:158:9-161:72
-174            android:name="com.example.kanji2.MainActivity"
-174-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:159:13-41
-175            android:exported="true"
-175-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:160:13-36
-176            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-176-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:161:13-69
-177
-178        <meta-data
-178-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:163:9-165:57
-179            android:name="preloaded_fonts"
-179-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:164:13-43
-180            android:resource="@array/preloaded_fonts" />
-180-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:165:13-54
-181
-182        <activity
-182-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
-183            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-183-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
-184            android:excludeFromRecents="true"
-184-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
-185            android:exported="true"
-185-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
-186            android:launchMode="singleTask"
-186-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
-187            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-187-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
-188            <intent-filter>
-188-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
-189                <action android:name="android.intent.action.VIEW" />
-189-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
-189-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
-190
-191                <category android:name="android.intent.category.DEFAULT" />
-191-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
-191-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
-192                <category android:name="android.intent.category.BROWSABLE" />
-192-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
-192-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
-193
-194                <data
-194-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
-195                    android:host="firebase.auth"
-195-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
-196                    android:path="/"
-196-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
-197                    android:scheme="genericidp" />
-197-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
-198            </intent-filter>
-199        </activity>
-200        <activity
-200-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
-201            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-201-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
-202            android:excludeFromRecents="true"
-202-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
-203            android:exported="true"
-203-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
-204            android:launchMode="singleTask"
-204-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
-205            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-205-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
-206            <intent-filter>
-206-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
-207                <action android:name="android.intent.action.VIEW" />
-207-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
-207-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+120            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+120-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:105:13-69
+121        <activity
+121-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:106:9-109:72
+122            android:name="com.example.kanji2.kuroi"
+122-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:107:13-34
+123            android:exported="false"
+123-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:108:13-37
+124            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+124-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:109:13-69
+125        <activity
+125-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:110:9-113:72
+126            android:name="com.example.kanji2.sun"
+126-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:111:13-32
+127            android:exported="false"
+127-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:112:13-37
+128            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+128-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:113:13-69
+129        <activity
+129-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:114:9-117:72
+130            android:name="com.example.kanji2.NoteEditor"
+130-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:115:13-39
+131            android:exported="false"
+131-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:116:13-37
+132            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+132-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:117:13-69
+133        <activity
+133-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:118:9-123:15
+134            android:name="com.example.kanji2.Note"
+134-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:119:13-33
+135            android:exported="false"
+135-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:121:13-37
+136            android:parentActivityName="com.example.kanji2.Itchi"
+136-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:120:13-48
+137            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+137-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:122:13-69
+138        <activity
+138-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:124:9-127:72
+139            android:name="com.example.kanji2.ni"
+139-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:125:13-31
+140            android:exported="false"
+140-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:126:13-37
+141            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+141-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:127:13-69
+142        <activity
+142-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:128:9-131:72
+143            android:name="com.example.kanji2.Check_Letter"
+143-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:129:13-41
+144            android:exported="false"
+144-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:130:13-37
+145            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+145-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:131:13-69
+146        <activity
+146-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:132:9-135:72
+147            android:name="com.example.kanji2.Level2"
+147-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:133:13-35
+148            android:exported="false"
+148-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:134:13-37
+149            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+149-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:135:13-69
+150        <activity
+150-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:136:9-139:72
+151            android:name="com.example.kanji2.Level3"
+151-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:137:13-35
+152            android:exported="false"
+152-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:138:13-37
+153            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+153-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:139:13-69
+154        <activity
+154-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:140:9-143:72
+155            android:name="com.example.kanji2.Level4"
+155-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:141:13-35
+156            android:exported="false"
+156-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:142:13-37
+157            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+157-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:143:13-69
+158        <activity
+158-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:144:9-147:72
+159            android:name="com.example.kanji2.Itchi"
+159-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:145:13-34
+160            android:exported="false"
+160-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:146:13-37
+161            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+161-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:147:13-69
+162        <activity
+162-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:148:9-151:72
+163            android:name="com.example.kanji2.Level_Kanji"
+163-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:149:13-40
+164            android:exported="false"
+164-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:150:13-37
+165            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+165-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:151:13-69
+166        <activity
+166-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:152:9-155:72
+167            android:name="com.example.kanji2.Level5"
+167-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:153:13-35
+168            android:exported="false"
+168-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:154:13-37
+169            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+169-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:155:13-69
+170        <activity
+170-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:156:9-164:20
+171            android:name="com.example.kanji2.splash_screen"
+171-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:157:13-42
+172            android:exported="true"
+172-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:158:13-36
+173            android:theme="@style/Theme.Material3.Light.NoActionBar" >
+173-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:159:13-69
+174            <intent-filter>
+174-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:160:13-163:29
+175                <action android:name="android.intent.action.MAIN" />
+175-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:161:17-69
+175-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:161:25-66
+176
+177                <category android:name="android.intent.category.LAUNCHER" />
+177-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:162:17-77
+177-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:162:27-74
+178            </intent-filter>
+179        </activity>
+180        <activity
+180-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:165:9-168:72
+181            android:name="com.example.kanji2.Register"
+181-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:166:13-37
+182            android:exported="false"
+182-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:167:13-37
+183            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+183-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:168:13-69
+184        <activity
+184-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:169:9-172:72
+185            android:name="com.example.kanji2.Login"
+185-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:170:13-34
+186            android:exported="true"
+186-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:171:13-36
+187            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+187-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:172:13-69
+188        <activity
+188-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:173:9-176:72
+189            android:name="com.example.kanji2.MainActivity"
+189-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:174:13-41
+190            android:exported="true"
+190-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:175:13-36
+191            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+191-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:176:13-69
+192
+193        <meta-data
+193-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:178:9-180:57
+194            android:name="preloaded_fonts"
+194-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:179:13-43
+195            android:resource="@array/preloaded_fonts" />
+195-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:180:13-54
+196
+197        <activity
+197-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
+198            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+198-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
+199            android:excludeFromRecents="true"
+199-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
+200            android:exported="true"
+200-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
+201            android:launchMode="singleTask"
+201-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
+202            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+202-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
+203            <intent-filter>
+203-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
+204                <action android:name="android.intent.action.VIEW" />
+204-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
+204-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+205
+206                <category android:name="android.intent.category.DEFAULT" />
+206-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
+206-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
+207                <category android:name="android.intent.category.BROWSABLE" />
+207-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+207-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
 208
-209                <category android:name="android.intent.category.DEFAULT" />
-209-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
-209-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
-210                <category android:name="android.intent.category.BROWSABLE" />
-210-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
-210-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
-211
-212                <data
-212-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
-213                    android:host="firebase.auth"
-213-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
-214                    android:path="/"
-214-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
-215                    android:scheme="recaptcha" />
-215-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
-216            </intent-filter>
-217        </activity>
-218
-219        <service
-219-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:66:9-72:19
-220            android:name="com.google.firebase.components.ComponentDiscoveryService"
-220-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:67:13-84
-221            android:directBootAware="true"
-221-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
-222            android:exported="false" >
-222-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:68:13-37
-223            <meta-data
-223-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
-224                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-224-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
-225                android:value="com.google.firebase.components.ComponentRegistrar" />
-225-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
-226            <meta-data
-226-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:17:13-19:85
-227                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-227-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:18:17-122
-228                android:value="com.google.firebase.components.ComponentRegistrar" />
-228-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:19:17-82
-229            <meta-data
-229-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:20:13-22:85
-230                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-230-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:21:17-111
-231                android:value="com.google.firebase.components.ComponentRegistrar" />
-231-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:22:17-82
-232            <meta-data
-232-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
-233                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
-233-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:30:17-120
-234                android:value="com.google.firebase.components.ComponentRegistrar" />
-234-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:31:17-82
-235            <meta-data
-235-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
-236                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-236-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:33:17-109
-237                android:value="com.google.firebase.components.ComponentRegistrar" />
-237-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:34:17-82
+209                <data
+209-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+210                    android:host="firebase.auth"
+210-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+211                    android:path="/"
+211-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+212                    android:scheme="genericidp" />
+212-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+213            </intent-filter>
+214        </activity>
+215        <activity
+215-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
+216            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+216-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
+217            android:excludeFromRecents="true"
+217-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
+218            android:exported="true"
+218-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
+219            android:launchMode="singleTask"
+219-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
+220            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+220-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
+221            <intent-filter>
+221-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
+222                <action android:name="android.intent.action.VIEW" />
+222-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
+222-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+223
+224                <category android:name="android.intent.category.DEFAULT" />
+224-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
+224-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
+225                <category android:name="android.intent.category.BROWSABLE" />
+225-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+225-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+226
+227                <data
+227-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+228                    android:host="firebase.auth"
+228-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+229                    android:path="/"
+229-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+230                    android:scheme="recaptcha" />
+230-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+231            </intent-filter>
+232        </activity>
+233
+234        <service
+234-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:66:9-72:19
+235            android:name="com.google.firebase.components.ComponentDiscoveryService"
+235-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:67:13-84
+236            android:directBootAware="true"
+236-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+237            android:exported="false" >
+237-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:68:13-37
 238            <meta-data
-238-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\578ce8084bedc8d140f464d6447559a5\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
-239                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-239-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\578ce8084bedc8d140f464d6447559a5\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+238-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
+239                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+239-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
 240                android:value="com.google.firebase.components.ComponentRegistrar" />
-240-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\578ce8084bedc8d140f464d6447559a5\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+240-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\USER\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
 241            <meta-data
-241-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
-242                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-242-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+241-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:17:13-19:85
+242                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+242-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:18:17-122
 243                android:value="com.google.firebase.components.ComponentRegistrar" />
-243-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
-244        </service>
-245
-246        <provider
-246-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
-247            android:name="com.google.firebase.provider.FirebaseInitProvider"
-247-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
-248            android:authorities="com.example.kanji2.firebaseinitprovider"
-248-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
-249            android:directBootAware="true"
-249-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
-250            android:exported="false"
-250-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
-251            android:initOrder="100" />
-251-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
-252
-253        <activity
-253-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\4a7f83fd254fa05cc8acd7d644c57a96\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-254            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-254-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\4a7f83fd254fa05cc8acd7d644c57a96\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-255            android:exported="false"
-255-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\4a7f83fd254fa05cc8acd7d644c57a96\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-256            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-256-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\4a7f83fd254fa05cc8acd7d644c57a96\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-257
-258        <meta-data
-258-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\ec1d0473320eafbc6e1a7cdc007dfb1a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-259            android:name="com.google.android.gms.version"
-259-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\ec1d0473320eafbc6e1a7cdc007dfb1a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-260            android:value="@integer/google_play_services_version" />
-260-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\ec1d0473320eafbc6e1a7cdc007dfb1a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-261
-262        <provider
-262-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-263            android:name="androidx.startup.InitializationProvider"
-263-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-264            android:authorities="com.example.kanji2.androidx-startup"
-264-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-265            android:exported="false" >
-265-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-266            <meta-data
-266-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-267                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-267-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-268                android:value="androidx.startup" />
-268-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-269            <meta-data
-269-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\USER\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-270                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-270-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\USER\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-271                android:value="androidx.startup" />
-271-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\USER\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-272        </provider>
-273    </application>
-274
-275</manifest>
+243-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:19:17-82
+244            <meta-data
+244-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:20:13-22:85
+245                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+245-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:21:17-111
+246                android:value="com.google.firebase.components.ComponentRegistrar" />
+246-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\USER\.gradle\caches\transforms-3\abb01abcd98f8ddba6ac5cab0922b9c8\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:22:17-82
+247            <meta-data
+247-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
+248                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+248-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:30:17-120
+249                android:value="com.google.firebase.components.ComponentRegistrar" />
+249-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:31:17-82
+250            <meta-data
+250-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
+251                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+251-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:33:17-109
+252                android:value="com.google.firebase.components.ComponentRegistrar" />
+252-->[com.google.firebase:firebase-database:20.3.0] C:\Users\USER\.gradle\caches\transforms-3\e759f13e8f70586c42b5bb07250babb5\transformed\firebase-database-20.3.0\AndroidManifest.xml:34:17-82
+253            <meta-data
+253-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\578ce8084bedc8d140f464d6447559a5\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+254                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+254-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\578ce8084bedc8d140f464d6447559a5\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+255                android:value="com.google.firebase.components.ComponentRegistrar" />
+255-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\578ce8084bedc8d140f464d6447559a5\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+256            <meta-data
+256-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+257                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+257-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+258                android:value="com.google.firebase.components.ComponentRegistrar" />
+258-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+259        </service>
+260
+261        <provider
+261-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+262            android:name="com.google.firebase.provider.FirebaseInitProvider"
+262-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+263            android:authorities="com.example.kanji2.firebaseinitprovider"
+263-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+264            android:directBootAware="true"
+264-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+265            android:exported="false"
+265-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+266            android:initOrder="100" />
+266-->[com.google.firebase:firebase-common:20.4.2] C:\Users\USER\.gradle\caches\transforms-3\fa0e09a9a7c3e92c4437cab91e791dcd\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+267
+268        <activity
+268-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\4a7f83fd254fa05cc8acd7d644c57a96\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+269            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+269-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\4a7f83fd254fa05cc8acd7d644c57a96\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+270            android:exported="false"
+270-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\4a7f83fd254fa05cc8acd7d644c57a96\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+271            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+271-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\4a7f83fd254fa05cc8acd7d644c57a96\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+272
+273        <meta-data
+273-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\ec1d0473320eafbc6e1a7cdc007dfb1a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+274            android:name="com.google.android.gms.version"
+274-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\ec1d0473320eafbc6e1a7cdc007dfb1a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+275            android:value="@integer/google_play_services_version" />
+275-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\USER\.gradle\caches\transforms-3\ec1d0473320eafbc6e1a7cdc007dfb1a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+276
+277        <provider
+277-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+278            android:name="androidx.startup.InitializationProvider"
+278-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+279            android:authorities="com.example.kanji2.androidx-startup"
+279-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+280            android:exported="false" >
+280-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+281            <meta-data
+281-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+282                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+282-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+283                android:value="androidx.startup" />
+283-->[androidx.emoji2:emoji2:1.2.0] C:\Users\USER\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+284            <meta-data
+284-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\USER\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+285                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+285-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\USER\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+286                android:value="androidx.startup" />
+286-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\USER\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+287        </provider>
+288    </application>
+289
+290</manifest>
