@@ -78,7 +78,7 @@ public class akai extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Note.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 

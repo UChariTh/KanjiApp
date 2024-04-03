@@ -105,17 +105,56 @@ public class Numbers extends AppCompatActivity {
     private void navigateToLevel(String levelTag) {
         Intent intent = null;
         switch (letter) {
-            case "-":
+            case "一":
                 intent = new Intent(getApplicationContext(), Itchi.class);
                 intent.putExtra("selectedLevel",letter);
                 break;
             case "ニ":
                 intent = new Intent(getApplicationContext(), ni.class);
                 intent.putExtra("selectedLevel",letter);
-
                 break;
             case "三":
                 intent = new Intent(getApplicationContext(), sun.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "四":
+                intent = new Intent(getApplicationContext(), shi.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "五":
+                intent = new Intent(getApplicationContext(), Go.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "六":
+                intent = new Intent(getApplicationContext(), roku.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "七":
+                intent = new Intent(getApplicationContext(), nana.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "八":
+                intent = new Intent(getApplicationContext(), hchi.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "九":
+                intent = new Intent(getApplicationContext(), kyu.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "+":
+                intent = new Intent(getApplicationContext(), ju.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "百":
+                intent = new Intent(getApplicationContext(), Hiyaku.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "千":
+                intent = new Intent(getApplicationContext(), Sen.class);
+                intent.putExtra("selectedLevel",letter);
+                break;
+            case "万":
+                intent = new Intent(getApplicationContext(), Man.class);
                 intent.putExtra("selectedLevel",letter);
                 break;
 
@@ -123,7 +162,7 @@ public class Numbers extends AppCompatActivity {
 
         if (intent != null) {
             startActivity(intent);
-            finish(); // Finish this activity to prevent returning to it on back press
+//            finish(); // Finish this activity to prevent returning to it on back press
         } else {
             Toast.makeText(Numbers.this, "Level interface not found", Toast.LENGTH_SHORT).show();
         }
