@@ -87,8 +87,8 @@
 47-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:32:13-69
 48        <activity
 48-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:33:9-36:72
-49            android:name="com.example.kanji2.Numbers"
-49-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:34:13-36
+49            android:name="com.example.kanji2.Note"
+49-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:34:13-33
 50            android:exported="false"
 50-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:35:13-37
 51            android:theme="@style/Theme.Material3.Light.NoActionBar" />
@@ -257,8 +257,8 @@
 132-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:117:13-69
 133        <activity
 133-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:118:9-123:15
-134            android:name="com.example.kanji2.Note"
-134-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:119:13-33
+134            android:name="com.example.kanji2.Numbers"
+134-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:119:13-36
 135            android:exported="false"
 135-->D:\mobileApp\KanjiApp\app\src\main\AndroidManifest.xml:121:13-37
 136            android:parentActivityName="com.example.kanji2.Itchi"

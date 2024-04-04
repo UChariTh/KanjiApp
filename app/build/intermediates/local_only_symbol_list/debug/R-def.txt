@@ -57,6 +57,7 @@ drawable sen
 drawable shi
 drawable sun
 drawable user
+drawable white_board
 drawable year
 font aclonica
 font acme

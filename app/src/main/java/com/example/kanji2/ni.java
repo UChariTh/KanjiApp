@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class ni extends AppCompatActivity {
 
-    ImageView backbutton;
+    ImageView backbutton,noteButton;
     Button buttonAudio;
     Button buttonAudio2;
     Button buttonAudio3;
@@ -35,6 +35,7 @@ public class ni extends AppCompatActivity {
 
 
         backbutton = findViewById(R.id.backbutton);
+        noteButton = findViewById(R.id.notebutton);
         buttonAudio = findViewById(R.id.buttonAudio);
         buttonAudio2 = findViewById(R.id.buttonAudio2);
         buttonAudio3 = findViewById(R.id.buttonAudio3);
@@ -63,6 +64,14 @@ public class ni extends AppCompatActivity {
 //                Intent intent = new Intent(getApplicationContext(), Numbers.class);
 //                startActivity(intent);
                 finish();
+            }
+        });
+
+        noteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Note.class);
+                startActivity(intent);
             }
         });
 

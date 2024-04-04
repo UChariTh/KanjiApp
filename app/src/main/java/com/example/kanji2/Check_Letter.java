@@ -17,7 +17,6 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.kanji2.LocalDatabase.Constants;
-import com.example.kanji2.ml.HandWrittenTfLiteModelLite;
 import com.example.kanji2.ml.Model;
 
 import org.tensorflow.lite.DataType;
@@ -69,7 +68,7 @@ public class Check_Letter extends AppCompatActivity {
                 userAnswer = classifyImage(bitmap);
                 bitmap = null;
 //                Toast.makeText(Check_Letter.this, "Draw Letter :- " + userAnswer, Toast.LENGTH_SHORT).show();
-                System.out.println("You draw letter :- "+userAnswer);
+//                System.out.println("You draw letter :- "+userAnswer);
                 checkUserAnswer(letter);
 
 
@@ -126,6 +125,7 @@ public class Check_Letter extends AppCompatActivity {
                 }else {
                     Toast.makeText(this, "Try again !", Toast.LENGTH_SHORT).show();
                 }
+                clearBlackBoard();
                 break;
 
 

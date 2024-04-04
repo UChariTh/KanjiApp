@@ -31,7 +31,7 @@
             android:exported="false"
             android:theme="@style/Theme.Material3.Light.NoActionBar"/>
         <activity
-            android:name=".Numbers"
+            android:name=".Note"
             android:exported="false"
             android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
@@ -116,7 +116,7 @@
             android:exported="false"
             android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
-            android:name=".Note"
+            android:name=".Numbers"
             android:parentActivityName=".Itchi"
             android:exported="false"
             android:theme="@style/Theme.Material3.Light.NoActionBar"
