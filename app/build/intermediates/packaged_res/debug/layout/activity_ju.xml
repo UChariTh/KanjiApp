@@ -14,6 +14,17 @@
         android:layout_height="65dp"
         tools:ignore="MissingConstraints">
 
+
+        <ImageView
+            android:id="@+id/notebutton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/backbutton"
             android:layout_width="45dp"
@@ -28,14 +39,13 @@
             android:id="@+id/textView3"
             android:layout_width="329dp"
             android:layout_height="37dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="12dp"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
             android:text="Ju kanji"
             android:textSize="28sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.695"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />

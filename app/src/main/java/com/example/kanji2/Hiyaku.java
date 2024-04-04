@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class Hiyaku extends AppCompatActivity {
 
-    ImageView backbutton;
+    ImageView backbutton,noteButton;
     Button buttonAudio;
     LinearLayout start;
     String letter;
@@ -29,6 +29,7 @@ public class Hiyaku extends AppCompatActivity {
         }
 
         backbutton = findViewById(R.id.backbutton);
+        noteButton = findViewById(R.id.notebutton);
         buttonAudio = findViewById(R.id.buttonAudio);
         start= findViewById(R.id.navigateGame);
 
@@ -51,6 +52,14 @@ public class Hiyaku extends AppCompatActivity {
 //                Intent intent = new Intent(getApplicationContext(), Level5.class);
 //                startActivity(intent);
                 finish();
+            }
+        });
+
+        noteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Note.class);
+                startActivity(intent);
             }
         });
 

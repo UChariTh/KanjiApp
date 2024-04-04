@@ -3102,6 +3102,7 @@ int drawable test_level_drawable 0x7f080114
 int drawable tooltip_frame_dark 0x7f080115
 int drawable tooltip_frame_light 0x7f080116
 int drawable user 0x7f080117
+int drawable white_board 0x7f08011e
 int drawable year 0x7f080118
 int font aclonica 0x7f090000
 int font acme 0x7f090001
