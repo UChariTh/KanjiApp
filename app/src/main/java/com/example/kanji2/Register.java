@@ -138,6 +138,7 @@ public class Register extends AppCompatActivity {
                                             Toast.LENGTH_SHORT).show();
 
                                     FirebaseUser currentUser = mAuth.getCurrentUser();
+
                                     userID=currentUser.getUid();
                                     preferenceManager.putString(Constants.KEY_USER_ID,userID);
 
@@ -148,7 +149,7 @@ public class Register extends AppCompatActivity {
                                     students.put("Email", email);
                                     students.put("UserID", userID);
 
-                                    Toast.makeText(Register.this, "Userrrrr"+preferenceManager.getString(Constants.KEY_USER_ID), Toast.LENGTH_SHORT).show();
+//                                    Toast.makeText(Register.this, "Userrrrr"+preferenceManager.getString(Constants.KEY_USER_ID), Toast.LENGTH_SHORT).show();
 
                                     documentReference.set(students).addOnSuccessListener(unused -> Log.d("TAG", "onSuccess:  " + userID));
 

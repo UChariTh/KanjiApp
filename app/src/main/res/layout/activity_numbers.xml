@@ -181,7 +181,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="四            shi"
+                    android:text="4               四            shi"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -210,7 +210,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="五             go"
+                    android:text="5                           五             go"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -239,7 +239,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="六           roku"
+                    android:text="6                 六           roku"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -268,7 +268,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="七      shichi"
+                    android:text="7                   七      shichi"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -297,7 +297,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="八       hachi "
+                    android:text="8                 八       hachi "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -326,7 +326,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="九            kiu  "
+                    android:text="9                九            kiu  "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -355,7 +355,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="十              ju "
+                    android:text="10             十              ju "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -384,7 +384,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="百      hiyaku  "
+                    android:text="100                百      hiyaku  "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -413,7 +413,7 @@
                     android:layout_marginTop="0dp"
                     android:fontFamily="sans-serif-black"
                     android:padding="7dp"
-                    android:text="千           sen  "
+                    android:text="1000              千           sen  "
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp" />

@@ -11,6 +11,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -20,12 +21,16 @@ public class NoteEditor extends AppCompatActivity {
 
     int noteId;
 
+    ImageView backbutton,addButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note_editor);
 
+        backbutton = findViewById(R.id.backbutton);
+        addButton= findViewById(R.id.addNote);
 
         EditText editText = (EditText) findViewById(R.id.editText);
 
@@ -43,8 +48,6 @@ public class NoteEditor extends AppCompatActivity {
 
 
         editText.addTextChangedListener(new TextWatcher() {
-
-
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -68,8 +71,20 @@ public class NoteEditor extends AppCompatActivity {
             }
         });
 
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(), Itchi.class);
+//                startActivity(intent);
+                finish();
+            }
+        });
 
-
-
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

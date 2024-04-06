@@ -3092,6 +3092,7 @@ int drawable notification_template_icon_low_bg 0x7f08010b
 int drawable notification_tile_bg 0x7f08010c
 int drawable notify_panel_notification_icon_bg 0x7f08010d
 int drawable pink_user 0x7f08010e
+int drawable plus 0x7f08011f
 int drawable roku 0x7f08010f
 int drawable round_button 0x7f080110
 int drawable select_card_view 0x7f080111
@@ -3178,6 +3179,7 @@ int id action_text 0x7f0a0043
 int id actions 0x7f0a0044
 int id activity_chooser_view_content 0x7f0a0045
 int id add 0x7f0a0046
+int id addNote 0x7f0a025a
 int id add_note 0x7f0a0047
 int id adjust_height 0x7f0a0048
 int id adjust_width 0x7f0a0049

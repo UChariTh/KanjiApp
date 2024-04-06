@@ -6,7 +6,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class StudentManager {
     private final FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
     private final FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-
     public String getStudentId(){
         return firebaseAuth.getUid();
     }

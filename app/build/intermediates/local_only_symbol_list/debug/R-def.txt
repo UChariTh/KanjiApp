@@ -50,6 +50,7 @@ drawable nana
 drawable ni
 drawable note
 drawable pink_user
+drawable plus
 drawable roku
 drawable round_button
 drawable select_card_view
@@ -62,6 +63,7 @@ drawable year
 font aclonica
 font acme
 font alegreya
+id addNote
 id add_note
 id backbutton
 id btn01

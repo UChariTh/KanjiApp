@@ -104,6 +104,9 @@ public class Note extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
 
                                 notes.remove(itemToDelete);
+
+                                notes.add("Example note");
+
                                 arrayAdapter.notifyDataSetChanged();
 
                                 SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.example.kanji2", Context.MODE_PRIVATE);
