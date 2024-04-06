@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
         else {
 //            textView.setText(user.getEmail());
 
-          String userName = preferenceManager.getString(Constants.KEY_PREFERENCE_USER_NAME);
-        textView.setText(userName);
+            String userName = preferenceManager.getString(Constants.KEY_PREFERENCE_USER_NAME);
+            textView.setText(userName);
         }
 
         logOut.setOnClickListener(new View.OnClickListener() {

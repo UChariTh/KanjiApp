@@ -32,7 +32,6 @@ public class Check_Letter extends AppCompatActivity {
     LinearLayout erase,checkAnswer;
     String letter;
 
-
     private float floatStartX = -1, floatStartY = -1,
             floatEndX = -1, floatEndY = -1;
 
@@ -137,7 +136,7 @@ public class Check_Letter extends AppCompatActivity {
         try {
             Model model = Model.newInstance(Check_Letter.this);
 
-            // Resize the image to the preferred size (150x150)
+            // Resize the image to the preferred size (64x64)
             int imageSize = 64;
             Bitmap resizedBitmap = Bitmap.createScaledBitmap(image, imageSize, imageSize, true);
 
@@ -181,9 +180,11 @@ public class Check_Letter extends AppCompatActivity {
 //            System.out.println("result : "+ maxPossibility);
 //            System.out.println("result : "+ Constants.resultMappedClass[maxPossibility]);
             model.close();
+
             if (!isHaveProbability && confidences[0] == 0)
                 return "-1";
             return Constants.resultMappedClass[maxPossibility];
+
 
         } catch (IOException e) {
             // TODO Handle the exception

@@ -29,7 +29,7 @@ public class Itchi extends AppCompatActivity {
 
         if(getIntent()!=null) {
             letter=getIntent().getStringExtra("selectedLevel");
-            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "leter : "+letter, Toast.LENGTH_SHORT).show();
         }
 
 
