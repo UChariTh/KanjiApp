@@ -6,6 +6,9 @@ public class Constants {
     public static final String KEY_PREFERENCE_PASSWORD = "PREF_PASSWORD";
     public static final String KEY_PREFERENCE_USER_NAME = "PREF_USER_NAME";
     public static final String KEY_USER_ID ="userID" ;
+    public static final String KEY_PREFERENCE_USER_TYPE = "PREF_USER_TYPE";
     public static final String[] resultMappedClass = {"一", "七", "九", "ニ", "三", "五"};
+    public static final String KEY_PREFERENCE_NUMBER_QUIZ_ADD = "PREF_NUMBER_QUIZ_ADD";
+    public static final String KEY_PREFERENCE_FAMILY_QUIZ_ADD = "PREF_FAMILY_QUIZ_ADD";
 
 }

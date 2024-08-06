@@ -19,17 +19,40 @@
         android:theme="@style/Theme.Material3.Light"
         tools:targetApi="31">
         <activity
+            android:name=".quiz_views.Number_Quiz_Details"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_views.Student_Quiz_DashBoard"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name=".admin_views.AddFamilyQuizzes"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name=".admin_views.AddNumberQuizzes"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name=".admin_views.Admin_Quiz_Add_DashBoard"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name=".Admin_Main"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
             android:name=".Man"
             android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".Sen"
             android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".Hiyaku"
             android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".Note"
             android:exported="false"
@@ -117,10 +140,9 @@
             android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".Numbers"
-            android:parentActivityName=".Itchi"
             android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar"
-            />
+            android:parentActivityName=".Itchi"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".ni"
             android:exported="false"

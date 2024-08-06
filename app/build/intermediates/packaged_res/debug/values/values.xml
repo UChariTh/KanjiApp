@@ -19,11 +19,19 @@
         <item>@font/acme</item>
         <item>@font/alegreya</item>
     </array>
+    <string-array name="spinner_options">
+        <item>Student</item>
+        <item>Admin</item>
+    </string-array>
     <color name="black">#FF000000</color>
+    <color name="green">#00FF00</color>
     <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="light_sky">#59CFFA</color>
+    <color name="purple">#A770FF</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#F38AAE</color>
     <color name="purple_700">#F191B1</color>
+    <color name="red">#FF0000</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>

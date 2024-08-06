@@ -12,7 +12,8 @@ import org.tensorflow.lite.support.metadata.MetadataExtractor;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 /**
- * This model doesn't have metadata, so no javadoc can be generated. */
+ * This model doesn't have metadata, so no javadoc can be generated.
+ */
 public final class Model {
   @NonNull
   private final org.tensorflow.lite.support.model.Model model;

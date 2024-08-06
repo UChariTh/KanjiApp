@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.kanji2.LocalDatabase.Constants;
 import com.example.kanji2.LocalDatabase.PreferenceManager;
+import com.example.kanji2.quiz_views.Student_Quiz_DashBoard;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth fAuth;
 
     ImageView logOut;
-    Button button2;
+    Button categoryDashBoard,quizDashBoard;
 
     TextView textView,instructions;
     FirebaseUser user;
@@ -31,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button2 = findViewById(R.id.get_started);
+        categoryDashBoard = findViewById(R.id.get_started);
+        quizDashBoard = findViewById(R.id.nav_quiz);
         instructions = findViewById(R.id.instruction);
         textView = findViewById(R.id.user_details);
         logOut=findViewById(R.id.btnLogOut);
@@ -69,10 +71,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
+        categoryDashBoard.setOnClickListener(new View.OnClickListener() {
+             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Level_Kanji.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        quizDashBoard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Student_Quiz_DashBoard.class);
                 startActivity(intent);
                 finish();
             }
