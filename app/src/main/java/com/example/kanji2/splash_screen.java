@@ -28,11 +28,10 @@ public class splash_screen extends AppCompatActivity {
         topAnim= AnimationUtils.loadAnimation(this, R.anim.top_anim);
         bottomAnim= AnimationUtils.loadAnimation(this,R.anim.bottom_anim);
 
-        //Hooks
+
         image = findViewById(R.id.imageView);
         logo = findViewById(R.id.textView);
         slogan = findViewById(R.id.textView2);
-
         image.setAnimation(topAnim);
         logo.setAnimation(bottomAnim);
         slogan.setAnimation(bottomAnim);

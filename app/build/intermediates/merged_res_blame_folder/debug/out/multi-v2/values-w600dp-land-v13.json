@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.kanji2.app-mergeDebugResources-33:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.example.kanji2.app-mergeDebugResources-52:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-3\\d488f2c4c46007d73eddcd94b832f4ea\\transformed\\material-1.9.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-3\\f55ccdf7f3c673673ab01bee8c951bae\\transformed\\material-1.12.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -27,4 +27,9 @@
     <string name="handful_a_small_handful">一握り ひとにぎり handful, a small handful</string>
     <string name="person_member">一員 いちいん person, member</string>
     <string name="whole_district_one_yen_throughout">一円 いちえん whole district, one yen, throughout</string>
+
+    <string-array name="spinner_options">
+        <item>Student</item>
+        <item>Admin</item>
+    </string-array>
 </resources>

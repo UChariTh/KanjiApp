@@ -46,16 +46,16 @@ public class Register extends AppCompatActivity {
 
     private PreferenceManager preferenceManager;
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
-    }
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        if(currentUser != null){
+//            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+//            startActivity(intent);
+//            finish();
+//        }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +94,7 @@ public class Register extends AppCompatActivity {
                 String telephone = editTextTelephone.getText().toString();
                 String email=editTextEmail.getText().toString().trim();
                 String password=editTextPassword.getText().toString().trim();
+                String userType="Student";
 
                 if (TextUtils.isEmpty(name)){
                     editTextUserName.setError("Enter Your Name! ");
@@ -148,6 +149,7 @@ public class Register extends AppCompatActivity {
                                     students.put("Telephone", telephone);
                                     students.put("Email", email);
                                     students.put("UserID", userID);
+                                    students.put("User Type", userType);
 
 //                                    Toast.makeText(Register.this, "Userrrrr"+preferenceManager.getString(Constants.KEY_USER_ID), Toast.LENGTH_SHORT).show();
 
