@@ -154,11 +154,8 @@ id detailFragmentImage
 id detailFragmentQuestions
 id detailFragmentTitle
 id detailProgressBar
-id editEmailSignUp
-id editPassSignUp
 id editText
 id email
-id emailEditSignIN
 id emailLayout
 id get_started
 id gifImageView
@@ -186,7 +183,6 @@ id option1Btn
 id option2Btn
 id option3Btn
 id option4Btn
-id passEditSignIn
 id password
 id passwordLayout
 id progressBar
@@ -201,10 +197,6 @@ id registerNow
 id resultCoutProgressBar
 id resultFragment
 id resultPercentageTv
-id signInBtn
-id signInText
-id signUpBtn
-id signUpText
 id spinner
 id splashFragment
 id startQuizBtn
@@ -238,6 +230,7 @@ id userNameLayout
 id user_details
 id writingView
 id wrongAnswersTv
+layout activity_add_days_of_week
 layout activity_add_family_quizzes
 layout activity_add_number_quizzes
 layout activity_admin_main
@@ -273,7 +266,6 @@ layout activity_note2
 layout activity_note3
 layout activity_note4
 layout activity_note_editor
-layout activity_number_quiz_details
 layout activity_numbers
 layout activity_register
 layout activity_roku
@@ -287,8 +279,6 @@ layout fragment_detail
 layout fragment_list
 layout fragment_quiz
 layout fragment_result
-layout fragment_sign_in
-layout fragment_sign_up
 layout fragment_splash
 menu add_note_menu
 mipmap ic_launcher

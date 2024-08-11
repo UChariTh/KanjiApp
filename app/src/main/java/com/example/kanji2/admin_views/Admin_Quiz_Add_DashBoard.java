@@ -22,7 +22,7 @@ import com.example.kanji2.R;
 
 public class Admin_Quiz_Add_DashBoard extends AppCompatActivity {
 
-    LinearLayout Number,Family,level03,level04,level05,level06,level07;
+    LinearLayout Number,Family,DaysOfWeek;
     ImageView backbutton;
 
 
@@ -35,11 +35,7 @@ public class Admin_Quiz_Add_DashBoard extends AppCompatActivity {
 
         Number = findViewById(R.id.btn01);
         Family = findViewById(R.id.btn02);
-        level03 = findViewById(R.id.btn03);
-        level04 = findViewById(R.id.btn04);
-        level05 = findViewById(R.id.btn05);
-        level06 = findViewById(R.id.btn06);
-        level07 = findViewById(R.id.btn07);
+        DaysOfWeek= findViewById(R.id.btn03);
         backbutton = findViewById(R.id.btnBack);
 
         backbutton.setOnClickListener(new View.OnClickListener() {
@@ -66,9 +62,14 @@ public class Admin_Quiz_Add_DashBoard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        DaysOfWeek.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddDaysOfWeek.class);
+                startActivity(intent);
+            }
+        });
 
     }
-
-
 
 }

@@ -39,7 +39,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
-            android:text="      Add Family Quizzes"
+            android:text="       Family Quizzes"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

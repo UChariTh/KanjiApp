@@ -3522,14 +3522,11 @@ int id easeInOut 0x7f0a0103
 int id easeOut 0x7f0a0104
 int id east 0x7f0a0105
 int id edge 0x7f0a0106
-int id editEmailSignUp 0x7f0a0107
-int id editPassSignUp 0x7f0a0108
 int id editText 0x7f0a0109
 int id edit_query 0x7f0a010a
 int id edit_text_id 0x7f0a010b
 int id elastic 0x7f0a010c
 int id email 0x7f0a010d
-int id emailEditSignIN 0x7f0a010e
 int id emailLayout 0x7f0a010f
 int id embed 0x7f0a0110
 int id end 0x7f0a0111
@@ -3735,7 +3732,6 @@ int id parent 0x7f0a01d8
 int id parentPanel 0x7f0a01d9
 int id parentRelative 0x7f0a01da
 int id parent_matrix 0x7f0a01db
-int id passEditSignIn 0x7f0a01dc
 int id password 0x7f0a01dd
 int id passwordLayout 0x7f0a01de
 int id password_toggle 0x7f0a01df
@@ -3802,10 +3798,6 @@ int id shortcut 0x7f0a021b
 int id showCustom 0x7f0a021c
 int id showHome 0x7f0a021d
 int id showTitle 0x7f0a021e
-int id signInBtn 0x7f0a021f
-int id signInText 0x7f0a0221
-int id signUpBtn 0x7f0a0222
-int id signUpText 0x7f0a0224
 int id sin 0x7f0a0225
 int id skipCollapsed 0x7f0a0226
 int id skipped 0x7f0a0227
@@ -4062,6 +4054,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0d0018
 int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
+int layout activity_add_days_of_week 0x7f0d00a1
 int layout activity_add_family_quizzes 0x7f0d001c
 int layout activity_add_number_quizzes 0x7f0d001d
 int layout activity_admin_main 0x7f0d001e
@@ -4097,7 +4090,6 @@ int layout activity_note2 0x7f0d003b
 int layout activity_note3 0x7f0d003c
 int layout activity_note4 0x7f0d003d
 int layout activity_note_editor 0x7f0d003e
-int layout activity_number_quiz_details 0x7f0d003f
 int layout activity_numbers 0x7f0d0040
 int layout activity_register 0x7f0d0041
 int layout activity_roku 0x7f0d0042
@@ -4129,8 +4121,6 @@ int layout fragment_detail 0x7f0d005b
 int layout fragment_list 0x7f0d005c
 int layout fragment_quiz 0x7f0d005d
 int layout fragment_result 0x7f0d005e
-int layout fragment_sign_in 0x7f0d005f
-int layout fragment_sign_up 0x7f0d0060
 int layout fragment_splash 0x7f0d0061
 int layout ime_base_split_test_activity 0x7f0d0062
 int layout ime_secondary_split_test_activity 0x7f0d0063

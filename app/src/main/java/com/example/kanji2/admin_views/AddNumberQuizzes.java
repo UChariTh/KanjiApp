@@ -106,12 +106,13 @@ public class AddNumberQuizzes extends AppCompatActivity {
         addQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (quizNumber > 5) {
-                    Toast.makeText(AddNumberQuizzes.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
-                    quizCount.setText("Complete !" );
-                    addQuiz.setVisibility(View.INVISIBLE);
-                    return;
-                }
+
+//                if (quizNumber > 5) {
+//                    Toast.makeText(AddNumberQuizzes.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
+//                    quizCount.setText("Complete !" );
+//                    addQuiz.setVisibility(View.INVISIBLE);
+//                    return;
+//                }
 
                 progressBar.setVisibility(View.VISIBLE);
 
@@ -205,13 +206,17 @@ public class AddNumberQuizzes extends AppCompatActivity {
     }
 
     private void updateQuizCount() {
-        if (quizNumber <= 5) {
-            quizNumber++;
-            quizCount.setText("Quiz " + quizNumber);
-            
-        } else {
-//            Toast.makeText(AddNumberQuizzes.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
-        }
+
+        quizNumber++;
+        quizCount.setText("Quiz " + quizNumber);
+
+//        if (quizNumber <= 5) {
+//            quizNumber++;
+//            quizCount.setText("Quiz " + quizNumber);
+//
+//        } else {
+////            Toast.makeText(AddNumberQuizzes.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
+//        }
     }
 
     private void clearTextBoxes() {
