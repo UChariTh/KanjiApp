@@ -15,13 +15,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.kanji2.R;
-import com.example.kanji2.viewmodel.AuthViewModel;
 
 
 public class SplashFragment extends Fragment {
 
 
-    private AuthViewModel viewModel;
+
     private NavController navController;
 
     @Override
@@ -35,8 +34,6 @@ public class SplashFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable  Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        viewModel = new ViewModelProvider(this , ViewModelProvider.AndroidViewModelFactory
-                .getInstance(getActivity().getApplication())).get(AuthViewModel.class);
         navController = Navigation.findNavController(view);
     }
 
@@ -48,11 +45,9 @@ public class SplashFragment extends Fragment {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                if (viewModel.getCurrentUser() != null){
-                    navController.navigate(R.id.action_splashFragment_to_listFragment);
-                }else{
-//                    navController.navigate(R.id.action_splashFragment_to_signInFragment);
-                }
+
+                navController.navigate(R.id.action_splashFragment_to_listFragment);
+
             }
         }, 4000);
 
