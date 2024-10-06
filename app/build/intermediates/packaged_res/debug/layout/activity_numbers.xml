@@ -85,7 +85,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="一">
+                android:tag="level1">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="ニ">
+                android:tag="level2">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -141,7 +141,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="三">
+                android:tag="level3">
 
 
                 <TextView
@@ -170,7 +170,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="四">
+                android:tag="level4">
 
 
                 <TextView
@@ -200,7 +200,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="五">
+                android:tag="level5">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -229,7 +229,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="六">
+                android:tag="level6">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -258,7 +258,8 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="七">
+                android:tag="level7">
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -287,7 +288,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="八">
+                android:tag="level8">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -316,7 +317,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="九">
+                android:tag="level9">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -345,7 +346,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="+">
+                android:tag="level10">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -374,7 +375,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="百">
+                android:tag="level11">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -403,7 +404,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
-                android:tag="千">
+                android:tag="level12">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -432,7 +433,7 @@
                 android:layout_weight="1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp"
-                android:tag="万">
+                android:tag="level13">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -611,7 +612,7 @@
     <LinearLayout
         android:id="@+id/navigateLetter"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="60dp"
         android:background="@drawable/block04but"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent">
@@ -622,7 +623,6 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
-
             android:fontFamily="@font/aclonica"
             android:padding="11dp"
             android:paddingStart="50dp"

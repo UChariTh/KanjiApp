@@ -15,8 +15,8 @@ public class Sen extends AppCompatActivity {
 
     ImageView backbutton,noteButton;
     Button buttonAudio;
-    LinearLayout start;
-    String letter;
+    Button writingStart,pronounceStart;
+    String level,letter="一";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,28 +24,39 @@ public class Sen extends AppCompatActivity {
         setContentView(R.layout.activity_sen);
 
         if(getIntent()!=null) {
-            letter=getIntent().getStringExtra("selectedLevel");
-            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
+            level=getIntent().getStringExtra("selectedLevel");
         }
 
         backbutton = findViewById(R.id.backbutton);
         noteButton = findViewById(R.id.notebutton);
         buttonAudio = findViewById(R.id.buttonAudio);
-        start= findViewById(R.id.navigateGame);
+        writingStart = findViewById(R.id.navigateWritingGame);
+        pronounceStart=findViewById(R.id.navigateSpeakingGame);
 
         MediaPlayer mediaPlayer1 = MediaPlayer.create(this,R.raw.sen);
 
-        start.setOnClickListener(new View.OnClickListener() {
+        writingStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Check_Letter.class);
-                intent.putExtra("selectedLevel",letter);
+                intent.putExtra("selectedLevel",level);
+                intent.putExtra("selectedLetter",letter);
+
                 startActivity(intent);
 
 
             }
         });
+        pronounceStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Check_Pronounce.class);
+                intent.putExtra("selectedLevel",level);
+                intent.putExtra("selectedLetter",letter);
 
+                startActivity(intent);
+            }
+        });
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

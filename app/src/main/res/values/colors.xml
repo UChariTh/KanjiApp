@@ -11,6 +11,8 @@
     <color name="purple">#A770FF</color>
     <color name="light_sky">#59CFFA</color>
     <color name="red">#FF0000</color>
-    <color name="green">#00FF00</color>
+    <color name="green">#15A515</color>
+
+    <color name="locked_color">#A3000000</color>
 
 </resources>

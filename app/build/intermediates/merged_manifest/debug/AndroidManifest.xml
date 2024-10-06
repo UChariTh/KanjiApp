@@ -35,6 +35,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.Material3.Light" >
         <activity
+            android:name="com.example.kanji2.Check_Pronounce"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
             android:name="com.example.kanji2.admin_views.AddDaysOfWeek"
             android:exported="false"
             android:theme="@style/Theme.Material3.Light.NoActionBar" />

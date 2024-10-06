@@ -19,8 +19,8 @@ public class roku extends AppCompatActivity {
     Button buttonAudio2;
     Button buttonAudio3;
     Button buttonAudio4;
-    LinearLayout start;
-    String letter;
+    Button writingStart,pronounceStart;
+    String level,letter="一";
 
 
     @Override
@@ -29,8 +29,7 @@ public class roku extends AppCompatActivity {
         setContentView(R.layout.activity_roku);
 
         if(getIntent()!=null) {
-            letter=getIntent().getStringExtra("selectedLevel");
-            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
+            level=getIntent().getStringExtra("selectedLevel");
         }
 
         backbutton = findViewById(R.id.backbutton);
@@ -39,24 +38,36 @@ public class roku extends AppCompatActivity {
         buttonAudio2 = findViewById(R.id.buttonAudio2);
         buttonAudio3 = findViewById(R.id.buttonAudio3);
         buttonAudio4 = findViewById(R.id.buttonAudio4);
-        start= findViewById(R.id.navigateGame);
+        writingStart = findViewById(R.id.navigateWritingGame);
+        pronounceStart=findViewById(R.id.navigateSpeakingGame);
 
         MediaPlayer mediaPlayer1 = MediaPlayer.create(this,R.raw.roku);
         MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.rokugatsu);
         MediaPlayer mediaPlayer3 = MediaPlayer.create(this,R.raw.muika);
         MediaPlayer mediaPlayer4 = MediaPlayer.create(this,R.raw.rokunin);
 
-        start.setOnClickListener(new View.OnClickListener() {
+        writingStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Check_Letter.class);
-                intent.putExtra("selectedLevel",letter);
+                intent.putExtra("selectedLevel",level);
+                intent.putExtra("selectedLetter",letter);
+
                 startActivity(intent);
 
 
             }
         });
+        pronounceStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Check_Pronounce.class);
+                intent.putExtra("selectedLevel",level);
+                intent.putExtra("selectedLetter",letter);
 
+                startActivity(intent);
+            }
+        });
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
