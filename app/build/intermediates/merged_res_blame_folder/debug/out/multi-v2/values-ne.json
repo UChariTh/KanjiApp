@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.kanji2.app-mergeDebugResources-52:/values-ne/values-ne.xml",
+            "outputFile": "com.example.kanji2.app-mergeDebugResources-54:/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-3\\930d6f5a0bf6fd283a95876ad8b51148\\transformed\\play-services-base-18.1.0\\res\\values-ne\\values.xml",

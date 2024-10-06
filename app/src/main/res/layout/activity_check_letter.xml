@@ -27,12 +27,12 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="329dp"
+            android:layout_width="wrap_content"
             android:layout_height="37dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
-            android:text="     Check Your Knowledge"
+            android:text="     Writing Skill"
             android:textSize="23sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

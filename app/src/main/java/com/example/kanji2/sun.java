@@ -18,8 +18,8 @@ public class sun extends AppCompatActivity {
     Button buttonAudio2;
     Button buttonAudio3;
     Button buttonAudio4;
-    LinearLayout start;
-    String letter;
+    Button writingStart,pronounceStart;
+    String level,letter="三";
 
 
     @Override
@@ -28,8 +28,7 @@ public class sun extends AppCompatActivity {
         setContentView(R.layout.activity_sun);
 
         if(getIntent()!=null) {
-            letter=getIntent().getStringExtra("selectedLevel");
-            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
+            level=getIntent().getStringExtra("selectedLevel");
         }
 
         backbutton = findViewById(R.id.backbutton);
@@ -38,21 +37,35 @@ public class sun extends AppCompatActivity {
         buttonAudio2 = findViewById(R.id.buttonAudio2);
         buttonAudio3 = findViewById(R.id.buttonAudio3);
         buttonAudio4 = findViewById(R.id.buttonAudio4);
-        start= findViewById(R.id.navigateGame);
+        writingStart = findViewById(R.id.navigateWritingGame);
+        pronounceStart=findViewById(R.id.navigateSpeakingGame);
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.sun);
         MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.sunriyu);
         MediaPlayer mediaPlayer3 = MediaPlayer.create(this,R.raw.mikazuki);
         MediaPlayer mediaPlayer4 = MediaPlayer.create(this,R.raw.sunkaku);
 
-        start.setOnClickListener(new View.OnClickListener() {
+        writingStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Check_Letter.class);
-                intent.putExtra("selectedLevel",letter);
+                intent.putExtra("selectedLevel",level);
+                intent.putExtra("selectedLetter",letter);
+
                 startActivity(intent);
 
 
+            }
+        });
+
+        pronounceStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Check_Pronounce.class);
+                intent.putExtra("selectedLevel",level);
+                intent.putExtra("selectedLetter",letter);
+
+                startActivity(intent);
             }
         });
 

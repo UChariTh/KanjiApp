@@ -166,8 +166,8 @@ public class AddNumberQuizzes extends AppCompatActivity {
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                             @Override
                             public void onSuccess(DocumentReference questionDocumentReference) {
-                                Log.d("AddQuiz", "Question added with ID: " + questionDocumentReference.getId());
-                                Toast.makeText(AddNumberQuizzes.this, "Quiz question added successfully", Toast.LENGTH_SHORT).show();
+//                                Log.d("AddQuiz", "Question added with ID: " + questionDocumentReference.getId());
+//                                Toast.makeText(AddNumberQuizzes.this, "Quiz question added successfully", Toast.LENGTH_SHORT).show();
                                 updateQuizCount();
                                 clearTextBoxes();
 
@@ -210,13 +210,6 @@ public class AddNumberQuizzes extends AppCompatActivity {
         quizNumber++;
         quizCount.setText("Quiz " + quizNumber);
 
-//        if (quizNumber <= 5) {
-//            quizNumber++;
-//            quizCount.setText("Quiz " + quizNumber);
-//
-//        } else {
-////            Toast.makeText(AddNumberQuizzes.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
-//        }
     }
 
     private void clearTextBoxes() {

@@ -8,6 +8,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -19,8 +20,8 @@ public class Itchi extends AppCompatActivity {
     Button buttonAudio2;
     Button buttonAudio3;
     Button buttonAudio4;
-    LinearLayout start;
-    String letter;
+    Button writingStart,pronounceStart;
+    String level,letter="一";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +29,9 @@ public class Itchi extends AppCompatActivity {
         setContentView(R.layout.activity_itchi);
 
         if(getIntent()!=null) {
-            letter=getIntent().getStringExtra("selectedLevel");
-            Toast.makeText(this, "leter : "+letter, Toast.LENGTH_SHORT).show();
+            level=getIntent().getStringExtra("selectedLevel");
+            Toast.makeText(this, "level : "+level+letter, Toast.LENGTH_SHORT).show();
         }
-
 
         backbutton = findViewById(R.id.backbutton);
         noteButton = findViewById(R.id.notebutton);
@@ -39,22 +39,34 @@ public class Itchi extends AppCompatActivity {
         buttonAudio2 = findViewById(R.id.buttonAudio2);
         buttonAudio3 = findViewById(R.id.buttonAudio3);
         buttonAudio4 = findViewById(R.id.buttonAudio4);
-        start = findViewById(R.id.navigateGame);
-
+        writingStart = findViewById(R.id.navigateWritingGame);
+        pronounceStart=findViewById(R.id.navigateSpeakingGame);
 
         MediaPlayer mediaPlayer1 = MediaPlayer.create(this,R.raw.itchi);
         MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.itchi);
         MediaPlayer mediaPlayer3 = MediaPlayer.create(this,R.raw.ichiin);
         MediaPlayer mediaPlayer4 = MediaPlayer.create(this,R.raw.hithothu);
 
-        start.setOnClickListener(new View.OnClickListener() {
+        writingStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Check_Letter.class);
-                intent.putExtra("selectedLevel",letter);
+                intent.putExtra("selectedLevel",level);
+                intent.putExtra("selectedLetter",letter);
+
                 startActivity(intent);
 
 
+            }
+        });
+        pronounceStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Check_Pronounce.class);
+                intent.putExtra("selectedLevel",level);
+                intent.putExtra("selectedLetter",letter);
+
+                startActivity(intent);
             }
         });
 

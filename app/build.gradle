@@ -57,6 +57,20 @@ dependencies {
 
     apply plugin: "androidx.navigation.safeargs"
 
+    implementation 'com.airbnb.android:lottie:3.7.0'
+
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+//
+//    //okhttp3 dependencies
+//    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.11'
+//    //Gson dependency
+//    implementation 'com.google.code.gson:gson:2.9.0'
+//    //ffmpeg library
+//    implementation 'com.arthenica:mobile-ffmpeg-full:4.4'
+//
+//    //Android Wave Recorder
+//    implementation 'com.github.squti:Android-Wave-Recorder:1.7.0'
+
 
 
 
