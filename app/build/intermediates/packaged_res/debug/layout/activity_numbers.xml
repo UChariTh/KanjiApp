@@ -10,7 +10,6 @@
     tools:context=".Level5">
 
 
-
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/layout01"
     android:layout_width="match_parent"

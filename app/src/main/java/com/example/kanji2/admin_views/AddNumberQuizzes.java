@@ -44,7 +44,7 @@ public class AddNumberQuizzes extends AppCompatActivity {
     ProgressBar progressBar;
     ImageView backButton;
     String category = "Number";
-    private int quizNumber = 0;
+    private int quizNumber;
 
 
     @Override
@@ -106,13 +106,6 @@ public class AddNumberQuizzes extends AppCompatActivity {
         addQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-//                if (quizNumber > 5) {
-//                    Toast.makeText(AddNumberQuizzes.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
-//                    quizCount.setText("Complete !" );
-//                    addQuiz.setVisibility(View.INVISIBLE);
-//                    return;
-//                }
 
                 progressBar.setVisibility(View.VISIBLE);
 

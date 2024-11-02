@@ -3,6 +3,7 @@ package com.example.kanji2.views;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -49,8 +50,6 @@ public class ListFragment extends Fragment implements QuizListAdapter.OnItemClic
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-   
-
         viewModel = new ViewModelProvider(this , ViewModelProvider.AndroidViewModelFactory
                 .getInstance(getActivity().getApplication())).get(QuizListViewModel.class);
 
@@ -87,10 +86,28 @@ public class ListFragment extends Fragment implements QuizListAdapter.OnItemClic
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
+
+            }
+        });
+
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                // Navigate back or any other action
+                if (navController != null) {
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+
+                } else {
+                    requireActivity().finish(); // Closes the activity
+                }
             }
         });
 
     }
+
+
+
 
     @Override
     public void onItemClick(int position) {

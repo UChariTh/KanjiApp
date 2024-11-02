@@ -49,12 +49,12 @@ public class Login extends AppCompatActivity {
             if (userTypeFirebase.equals("Student")){
                 navigateStudentDashBoard();
 
-                Toast.makeText(Login.this, "Student Login "+userTypeFirebase, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Login.this, "Student Login "+userTypeFirebase, Toast.LENGTH_SHORT).show();
 
             }else if(userTypeFirebase.equals("Admin")){
                 navigateAdminDashBoard();
 
-                Toast.makeText(Login.this, "Admin Login", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Login.this, "Admin Login", Toast.LENGTH_SHORT).show();
 
             }else{
                 Toast.makeText(Login.this, "error", Toast.LENGTH_SHORT).show();
@@ -66,6 +66,7 @@ public class Login extends AppCompatActivity {
 //            finish();
         }
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

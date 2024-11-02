@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.kanji2.app-mergeDebugResources-54:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.example.kanji2.app-mergeDebugResources-55:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-3\\19b10aff41cf5fef2d43470d1c43edd5\\transformed\\browser-1.4.0\\res\\values-zh-rTW\\values-zh-rTW.xml",

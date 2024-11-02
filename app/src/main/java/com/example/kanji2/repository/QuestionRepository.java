@@ -96,8 +96,10 @@ public class QuestionRepository {
         void onLoad(List<QuestionModel> questionModels);
         void onError(Exception e);
     }
+
     public interface OnResultAdded{
         boolean onSubmit();
         void onError(Exception e);
     }
+
 }

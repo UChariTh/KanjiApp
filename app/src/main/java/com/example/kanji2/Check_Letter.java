@@ -24,6 +24,7 @@ import com.example.kanji2.LocalDatabase.Constants;
 import com.example.kanji2.Model.Level;
 import com.example.kanji2.Model.LevelData;
 import com.example.kanji2.ml.Model;
+
 import com.example.kanji2.repository.NumberRepository;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -65,7 +66,7 @@ public class Check_Letter extends AppCompatActivity {
             levelName=getIntent().getStringExtra("selectedLevel");
             letter=getIntent().getStringExtra("selectedLetter");
 
-            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
         }
 
         imageView = findViewById(R.id.writingView);
@@ -264,6 +265,7 @@ public class Check_Letter extends AppCompatActivity {
         try {
             Model model = Model.newInstance(Check_Letter.this);
 
+
             // Resize the image to the preferred size (64x64)
             int imageSize = 64;
             Bitmap resizedBitmap = Bitmap.createScaledBitmap(image, imageSize, imageSize, true);
@@ -291,6 +293,7 @@ public class Check_Letter extends AppCompatActivity {
 
             // Runs model inference and gets result.
             Model.Outputs outputs = model.process(inputFeature0);
+
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
             float[] confidences = outputFeature0.getFloatArray();
             int maxPossibility = 0;
@@ -311,6 +314,7 @@ public class Check_Letter extends AppCompatActivity {
 
             if (!isHaveProbability && confidences[0] == 0)
                 return "-1";
+
             return Constants.resultMappedClass[maxPossibility];
 
 
@@ -320,6 +324,77 @@ public class Check_Letter extends AppCompatActivity {
             return "-1";
         }
     }
+
+//    public String classifyImage(Bitmap image) {
+//        try {
+//            // Load the new model
+//            Modelnew model = Modelnew.newInstance(Check_Letter.this);
+//
+//            // Resize the image to the preferred size (64x64)
+//            int imageSize = 64;
+//            Bitmap resizedBitmap = Bitmap.createScaledBitmap(image, imageSize, imageSize, true);
+//
+//            // Creates inputs for reference.
+//            // The input shape is now [1, 64, 64, 3] to handle RGB images.
+//            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 64, 64, 3}, DataType.FLOAT32);
+//
+//            ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3); // 3 channels (R, G, B)
+//            byteBuffer.order(ByteOrder.nativeOrder());
+//
+//            int[] vals = new int[imageSize * imageSize];
+//            resizedBitmap.getPixels(vals, 0, resizedBitmap.getWidth(), 0, 0, resizedBitmap.getWidth(), resizedBitmap.getHeight());
+//
+//            int pixel = 0;
+//            for (int i = 0; i < imageSize; i++) {
+//                for (int j = 0; j < imageSize; j++) {
+//                    int val = vals[pixel++]; // ARGB values
+//                    // Put R, G, B values into the ByteBuffer
+//                    byteBuffer.putFloat(((val >> 16) & 0xFF) * (1.F / 255)); // Red channel
+//                    byteBuffer.putFloat(((val >> 8) & 0xFF) * (1.F / 255));  // Green channel
+//                    byteBuffer.putFloat((val & 0xFF) * (1.F / 255));         // Blue channel
+//                }
+//            }
+//
+//            // Load the processed image data into the input tensor
+//            inputFeature0.loadBuffer(byteBuffer);
+//
+//            // Runs model inference and gets the result.
+//            Modelnew.Outputs outputs = model.process(inputFeature0);
+//            TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
+//
+//            float[] confidences = outputFeature0.getFloatArray();
+//            int maxPossibility = 0;
+//            float maxConfidence = 0;
+//            boolean isHaveProbability = false;
+//
+//            // Find the class with the highest confidence score
+//            for (int i = 0; i < confidences.length; i++) {
+//                if (confidences[i] > maxConfidence) {
+//                    maxConfidence = confidences[i];
+//                    maxPossibility = i;
+//                    isHaveProbability = true;
+//                }
+//            }
+//            Toast.makeText(this, ""+maxPossibility, Toast.LENGTH_SHORT).show();
+//            // Release the model resources
+//            model.close();
+//
+//            // Handle the case where there are no confident predictions
+//            if (!isHaveProbability && confidences[0] == 0)
+//                return "-1";
+//
+//            // Return the predicted class name
+//            return Constants.resultMappedClass[maxPossibility];
+//
+//
+//        } catch (IOException e) {
+//            // TODO Handle the exception
+//            return "-1";
+//        }
+//    }
+
+
+
 
     public void drawPaintSketchImage(){
 
@@ -420,4 +495,5 @@ public class Check_Letter extends AppCompatActivity {
         }
         alertDialog.show();
     }
+
 }

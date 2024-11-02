@@ -1,4 +1,4 @@
-com.example.kanji2.test.app-core-1.6.0-0 C:\Users\USER\.gradle\caches\transforms-3\6a40a99fefa3f0aef9f0e98e59e18230\transformed\core-1.6.0\res
+com.example.kanji2.test.app-core-1.6.0-0 C:\Users\USER\.gradle\caches\transforms-3\21e9e280869e8cf2c7a0c60fbef45274\transformed\core-1.6.0\res
 com.example.kanji2.test.app-androidTest-1 D:\mobileApp\KanjiApp\app\build\generated\res\resValues\androidTest\debug
 com.example.kanji2.test.app-androidTest-2 D:\mobileApp\KanjiApp\app\build\generated\res\rs\androidTest\debug
 com.example.kanji2.test.app-mergeDebugAndroidTestResources-3 D:\mobileApp\KanjiApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
