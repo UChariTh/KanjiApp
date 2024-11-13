@@ -103,6 +103,7 @@ public class Quizragment extends Fragment implements View.OnClickListener {
         });
 
         loadData();
+
     }
 
     private void loadData(){
@@ -204,7 +205,6 @@ public class Quizragment extends Fragment implements View.OnClickListener {
                  break;
              case R.id.nextQueBtn:
                  if (currentQueNo == totalQuestions){
-
 
                      submitResults();
                  }else{

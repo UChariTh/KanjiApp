@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.kanji2.app-mergeDebugResources-54:/values-v21/values-v21.xml",
+            "outputFile": "com.example.kanji2.app-mergeDebugResources-55:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-3\\74774b9bbf67f5c4477b00dc92011edb\\transformed\\credentials-play-services-auth-1.2.0-rc01\\res\\values-v21\\values-v21.xml",

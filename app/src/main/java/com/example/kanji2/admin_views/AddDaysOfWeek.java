@@ -41,18 +41,13 @@ public class AddDaysOfWeek extends AppCompatActivity {
     TextView quizCount;
     ImageView backButton;
     String category = "Days Of Week";
-    private int quizNumber=0;
+    private int quizNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_add_days_of_week);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
         question = findViewById(R.id.txtQuestion);
         answer = findViewById(R.id.txtAnswer);
@@ -111,12 +106,12 @@ public class AddDaysOfWeek extends AppCompatActivity {
             public void onClick(View view) {
                 progressBar.setVisibility(View.VISIBLE);
 
-                if (quizNumber > 10) {
-                    Toast.makeText(AddDaysOfWeek.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
-                    quizCount.setText("Complete !" );
-                    addQuiz.setVisibility(View.INVISIBLE);
-                    return;
-                }
+                //                if (quizNumber > 10) {
+//                    Toast.makeText(AddNumberQuizzes.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
+//                    quizCount.setText("Complete !" );
+//                    addQuiz.setVisibility(View.INVISIBLE);
+//                    return;
+//                }
 
                 String addQuestion = question.getText().toString();
                 String addAnswer = answer.getText().toString();
@@ -168,8 +163,8 @@ public class AddDaysOfWeek extends AppCompatActivity {
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                             @Override
                             public void onSuccess(DocumentReference questionDocumentReference) {
-                                Log.d("AddQuiz", "Question added with ID: " + questionDocumentReference.getId());
-                                Toast.makeText(AddDaysOfWeek.this, "Quiz question added successfully", Toast.LENGTH_SHORT).show();
+//                                Log.d("AddQuiz", "Question added with ID: " + questionDocumentReference.getId());
+//                                Toast.makeText(AddDaysOfWeek.this, "Quiz question added successfully", Toast.LENGTH_SHORT).show();
                                 updateQuizCount();
                                 clearTextBoxes();
 
@@ -190,6 +185,7 @@ public class AddDaysOfWeek extends AppCompatActivity {
                                             public void onFailure(@NonNull Exception e) {
                                                 Log.w("AddQuiz", "Error updating quiz document", e);
                                             }
+
                                         });
 
                                 progressBar.setVisibility(View.GONE);
@@ -210,13 +206,15 @@ public class AddDaysOfWeek extends AppCompatActivity {
     }
 
     private void updateQuizCount() {
-        if (quizNumber <= 10) {
-            quizNumber++;
-            quizCount.setText("Quiz " + quizNumber);
-
-        } else {
-            Toast.makeText(AddDaysOfWeek.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
-        }
+//        if (quizNumber <= 10) {
+//            quizNumber++;
+//            quizCount.setText("Quiz " + quizNumber);
+//
+//        } else {
+//            Toast.makeText(AddDaysOfWeek.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
+//        }
+        quizNumber++;
+        quizCount.setText("Quiz " + quizNumber);
     }
 
     private void clearTextBoxes() {

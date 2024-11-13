@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.kanji2.app-mergeDebugResources-54:/values-iw/values-iw.xml",
+            "outputFile": "com.example.kanji2.app-mergeDebugResources-55:/values-iw/values-iw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-3\\09db1c4157295507735784c0f8cac60d\\transformed\\credentials-1.2.0-rc01\\res\\values-iw\\values-iw.xml",

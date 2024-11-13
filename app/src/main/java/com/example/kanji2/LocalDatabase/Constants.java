@@ -8,7 +8,8 @@ public class Constants {
     public static final String KEY_USER_ID ="userID" ;
     public static final String KEY_PREFERENCE_USER_TYPE = "PREF_USER_TYPE";
     public static final String[] resultMappedClass = {"一", "七", "九", "ニ", "三", "五"};
-    public static final String KEY_PREFERENCE_NUMBER_QUIZ_ADD = "PREF_NUMBER_QUIZ_ADD";
-    public static final String KEY_PREFERENCE_FAMILY_QUIZ_ADD = "PREF_FAMILY_QUIZ_ADD";
+    public static final String BASE_URL = "http://192.168.8.116:8000";
+//    public static final String BASE_URL = "http://127.0.0.1:8000";
+
 
 }

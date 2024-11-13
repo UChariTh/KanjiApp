@@ -94,6 +94,7 @@ public class ResultFragment extends Fragment {
                 Long percent = (correct*100)/total;
 
                 percentTv.setText(String.valueOf(percent));
+
                 scoreProgressbar.setProgress(percent.intValue());
 
             }

@@ -218,6 +218,7 @@ id speakTextView
 id spinner
 id splashFragment
 id startQuizBtn
+id successConstraintLayoutPronounce
 id successConstraintLayoutWrite
 id successDes
 id successDone
@@ -304,6 +305,7 @@ layout fragment_list
 layout fragment_quiz
 layout fragment_result
 layout fragment_splash
+layout success_dialog_pronounce
 layout success_dialog_write
 layout wrong_dialog_write
 menu add_note_menu
@@ -394,3 +396,4 @@ string whole_district_one_yen_throughout
 style Theme.Kanji2
 xml backup_rules
 xml data_extraction_rules
+xml network_security_config

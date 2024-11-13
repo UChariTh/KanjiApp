@@ -4,6 +4,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,10 +13,14 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
+import android.icu.text.SimpleDateFormat;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -24,6 +30,8 @@ import com.example.kanji2.LocalDatabase.Constants;
 import com.example.kanji2.Model.Level;
 import com.example.kanji2.Model.LevelData;
 import com.example.kanji2.ml.Model;
+
+import com.example.kanji2.ml.WrittingModel;
 import com.example.kanji2.repository.NumberRepository;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,9 +42,14 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class Check_Letter extends AppCompatActivity {
 
@@ -65,7 +78,7 @@ public class Check_Letter extends AppCompatActivity {
             levelName=getIntent().getStringExtra("selectedLevel");
             letter=getIntent().getStringExtra("selectedLetter");
 
-            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
         }
 
         imageView = findViewById(R.id.writingView);
@@ -78,6 +91,7 @@ public class Check_Letter extends AppCompatActivity {
 
         userID = fAuth.getCurrentUser().getUid();
 
+
         checkAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,11 +101,17 @@ public class Check_Letter extends AppCompatActivity {
                 }
 
                 drawPaintSketchImage();
-                userAnswer = classifyImage(bitmap);
+//                userAnswer = classifyImage(bitmap);
+                classifyImage(bitmap);
+
                 bitmap = null;
 //                Toast.makeText(Check_Letter.this, "Draw Letter :- " + userAnswer, Toast.LENGTH_SHORT).show();
 //                System.out.println("You draw letter :- "+userAnswer);
-                checkUserAnswer(letter);
+
+//                checkUserAnswer(letter);
+                clearBlackBoard();
+
+//                saveBitmapToLocalDirectory(bitmap, "kanji_drawing_1");
 
 
                 checkAnswer.setBackground(ContextCompat.getDrawable(Check_Letter.this, R.drawable.clickerasebg));
@@ -122,6 +142,8 @@ public class Check_Letter extends AppCompatActivity {
                 }, 100);
             }
         });
+
+
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -258,45 +280,70 @@ public class Check_Letter extends AppCompatActivity {
     }
 
 
-
-
     public String classifyImage(Bitmap image) {
         try {
-            Model model = Model.newInstance(Check_Letter.this);
+            // Load the new model
+            WrittingModel model = WrittingModel.newInstance(Check_Letter.this);
 
-            // Resize the image to the preferred size (64x64)
-            int imageSize = 64;
+            // Resize the image to the new preferred size (128x128)
+            int imageSize = 128;
             Bitmap resizedBitmap = Bitmap.createScaledBitmap(image, imageSize, imageSize, true);
 
-            // Creates inputs for reference.
-            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 64, 64, 1}, DataType.FLOAT32);
-            ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize);
+            // Create input tensor with shape [1, 128, 128, 3] for RGB images
+            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 128, 128, 3}, DataType.FLOAT32);
+
+            // Prepare ByteBuffer for input tensor data
+            ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * imageSize * imageSize * 3); // 3 channels (R, G, B)
             byteBuffer.order(ByteOrder.nativeOrder());
 
             int[] vals = new int[imageSize * imageSize];
             resizedBitmap.getPixels(vals, 0, resizedBitmap.getWidth(), 0, 0, resizedBitmap.getWidth(), resizedBitmap.getHeight());
+
             int pixel = 0;
             for (int i = 0; i < imageSize; i++) {
                 for (int j = 0; j < imageSize; j++) {
-                    int val = vals[pixel++]; //FGB values
-                    // Uncomment these two lines if that array size {1, 64, 64, 1} like this
-//                    byteBuffer.putFloat(((val >> 16) & 0xFF) * (1.F / 1));
-//                    byteBuffer.putFloat(((val >> 8) & 0xFF) * (1.F / 1));
-                    byteBuffer.putFloat((val & 0xFF) * (1.F / 1));
+                    int val = vals[pixel++];
+                    // Scale to [-1, 1] to match MobileNetV2's expected input range
+                    byteBuffer.putFloat((((val >> 16) & 0xFF) / 127.5f) - 1f); // Red
+                    byteBuffer.putFloat((((val >> 8) & 0xFF) / 127.5f) - 1f);  // Green
+                    byteBuffer.putFloat(((val & 0xFF) / 127.5f) - 1f);         // Blue
                 }
             }
 
-            //load the image to tensorflow
+
+//            int pixel = 0;
+//            for (int i = 0; i < imageSize; i++) {
+//                for (int j = 0; j < imageSize; j++) {
+//                    int val = vals[pixel++]; // ARGB values
+//                    // Put R, G, B values into the ByteBuffer
+//                    byteBuffer.putFloat(((val >> 16) & 0xFF) * (1.F / 255)); // Red channel
+//                    byteBuffer.putFloat(((val >> 8) & 0xFF) * (1.F / 255));  // Green channel
+//                    byteBuffer.putFloat((val & 0xFF) * (1.F / 255));         // Blue channel
+//                }
+//            }
+
+            // Load the processed image data into the input tensor
             inputFeature0.loadBuffer(byteBuffer);
 
-            // Runs model inference and gets result.
-            Model.Outputs outputs = model.process(inputFeature0);
+            // Runs model inference and gets the result
+            WrittingModel.Outputs outputs = model.process(inputFeature0);
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
+
             float[] confidences = outputFeature0.getFloatArray();
             int maxPossibility = 0;
             float maxConfidence = 0;
             boolean isHaveProbability = false;
 
+//            System.out.println("Output Feature: "+outputFeature0);
+//            System.out.println("confidences: "+Arrays.toString(confidences));
+//
+//            Log.e("TAG", "classifyImage:   "+outputFeature0 );
+//
+//            Toast.makeText(this, "OutputFeature: " + outputFeature0, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "confidences: " + Arrays.toString(confidences), Toast.LENGTH_SHORT).show();
+
+
+            // Find the class with the highest confidence score
             for (int i = 0; i < confidences.length; i++) {
                 if (confidences[i] > maxConfidence) {
                     maxConfidence = confidences[i];
@@ -304,61 +351,66 @@ public class Check_Letter extends AppCompatActivity {
                     isHaveProbability = true;
                 }
             }
-            Toast.makeText(this, ""+maxPossibility, Toast.LENGTH_SHORT).show();
-//            System.out.println("result : "+ maxPossibility);
-//            System.out.println("result : "+ Constants.resultMappedClass[maxPossibility]);
+
+            Toast.makeText(this, "" + maxPossibility, Toast.LENGTH_SHORT).show();
+            // Release the model resources
             model.close();
 
+            // Handle the case where there are no confident predictions
             if (!isHaveProbability && confidences[0] == 0)
                 return "-1";
-            return Constants.resultMappedClass[maxPossibility];
 
+            // Return the predicted class name
+//            return Constants.resultMappedClass[maxPossibility];
+            return "一";
 
         } catch (IOException e) {
-            // TODO Handle the exception
-//            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+            // Handle the exception
             return "-1";
         }
     }
 
-    public void drawPaintSketchImage(){
 
-        if (bitmap == null){
+    public void drawPaintSketchImage() {
+        if (bitmap == null) {
             bitmap = Bitmap.createBitmap(imageView.getWidth(),
                     imageView.getHeight(),
                     Bitmap.Config.ARGB_8888);
+
             canvas = new Canvas(bitmap);
+//            canvas.drawColor(Color.BLACK);
+
             paint.setColor(Color.WHITE);
             paint.setAntiAlias(true);
             paint.setStyle(Paint.Style.STROKE);
-            paint.setStrokeWidth(10);
+            paint.setStrokeWidth(25);
         }
+
+        // Draw white line on the black canvas
         canvas.drawLine(floatStartX,
-                floatStartY-300,
+                floatStartY - 220,
                 floatEndX,
-                floatEndY-300,
+                floatEndY - 220,
                 paint);
         imageView.setImageBitmap(bitmap);
-
     }
-
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-
-        if (event.getAction() == MotionEvent.ACTION_DOWN){
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
             floatStartX = event.getX();
             floatStartY = event.getY();
         }
 
-        if (event.getAction() == MotionEvent.ACTION_MOVE){
+        if (event.getAction() == MotionEvent.ACTION_MOVE) {
             floatEndX = event.getX();
             floatEndY = event.getY();
             drawPaintSketchImage();
             floatStartX = event.getX();
             floatStartY = event.getY();
         }
-        if (event.getAction() == MotionEvent.ACTION_UP){
+
+        if (event.getAction() == MotionEvent.ACTION_UP) {
             floatEndX = event.getX();
             floatEndY = event.getY();
             drawPaintSketchImage();
@@ -366,6 +418,42 @@ public class Check_Letter extends AppCompatActivity {
 
         return super.onTouchEvent(event);
     }
+
+    public void saveBitmapToLocalDirectory(Bitmap bitmap, String fileName) {
+        // Create or get the directory to save the bitmap
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Calendar.getInstance().getTime());
+
+        // Get the directory for storing images in the app-specific external directory (under DCIM)
+        File directory = new File(this.getExternalFilesDir(Environment.DIRECTORY_PICTURES), "MyAppImages");
+
+        // Ensure the directory exists
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
+
+        // Create a new file with a properly formatted name
+        File fileSaveImage = new File(directory, timeStamp + ".png");
+
+        try {
+            // Save the bitmap to the file as a PNG
+            FileOutputStream fileOutputStream = new FileOutputStream(fileSaveImage);
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fileOutputStream);
+            fileOutputStream.flush();
+            fileOutputStream.close();
+
+            // Clear the canvas (or "blackboard") after saving
+            clearBlackBoard();
+
+            // Notify the user that the file was saved successfully
+            Toast.makeText(this, "File Saved Successfully: " + fileSaveImage.getAbsolutePath(), Toast.LENGTH_LONG).show();
+//            System.out.println("File Saved Successfully: " + fileSaveImage.getAbsolutePath());
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this, "Error saving file: " + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+    }
+
+
 
     private void clearBlackBoard(){
         if (canvas != null) {
@@ -420,4 +508,5 @@ public class Check_Letter extends AppCompatActivity {
         }
         alertDialog.show();
     }
+
 }

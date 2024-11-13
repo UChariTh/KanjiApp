@@ -46,7 +46,7 @@ public class AddFamilyQuizzes extends AppCompatActivity {
     TextView quizCount;
     ImageView backButton;
     String category = "Family";
-    private int quizNumber=0;
+    private int quizNumber;
 
 
     @Override
@@ -203,13 +203,9 @@ public class AddFamilyQuizzes extends AppCompatActivity {
     }
 
     private void updateQuizCount() {
-        if (quizNumber <= 10) {
-            quizNumber++;
-            quizCount.setText("Quiz " + quizNumber);
+        quizNumber++;
+        quizCount.setText("Quiz " + quizNumber);
 
-        } else {
-            Toast.makeText(AddFamilyQuizzes.this, "No more quizzes to add", Toast.LENGTH_SHORT).show();
-        }
     }
 
     private void clearTextBoxes() {
