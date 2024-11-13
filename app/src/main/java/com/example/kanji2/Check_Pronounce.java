@@ -38,8 +38,13 @@ import com.example.kanji2.ResponseModels.SpeakingResponse;
 import com.github.squti.androidwaverecorder.WaveRecorder;
 import com.google.gson.Gson;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
@@ -75,11 +80,11 @@ public class Check_Pronounce extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_check_pronounce);
 
-//        client = new OkHttpClient.Builder()
-//                .connectTimeout(30, TimeUnit.SECONDS)
-//                .readTimeout(30, TimeUnit.SECONDS)
-//                .writeTimeout(30, TimeUnit.SECONDS)
-//                .build();
+        client = new OkHttpClient.Builder()
+                .connectTimeout(60, TimeUnit.SECONDS)
+                .readTimeout(60, TimeUnit.SECONDS)
+                .writeTimeout(60, TimeUnit.SECONDS)
+                .build();
 
 
         if (getIntent() != null) {
@@ -229,123 +234,110 @@ public class Check_Pronounce extends AppCompatActivity {
         finish();
     }
 
-//    private void sendAPIRequest() {
-//        // Get the audio file path
-//        File audioFile = new File(getOutputFilePath());
-//
-//        // Check if the audio file exists
-//        if (!audioFile.exists()) {
-//            Toast.makeText(this, "Audio file not found", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//
-//        // Create a request body with the audio file
-//        RequestBody requestBody = new MultipartBody.Builder()
-//                .setType(MultipartBody.FORM)
-//                .addFormDataPart("audio", "audio.wav", RequestBody.create(audioFile, MediaType.parse("audio/wav")))
-//                .build();
-//
-//        // Build the request
-//        Request request = new Request.Builder()
-//                .url(Constants.BASE_URL + "/speech") // Updated API endpoint
-//                .post(requestBody)
-//                .build();
-//
-//        // Send the request using OkHttpClient
-//        client = new OkHttpClient();
-//        client.newCall(request).enqueue(new Callback() {
-//            @Override
-//            public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
-//                if (response.isSuccessful() && response.body() != null) {
-//                    // Parse and handle the response on the main thread
-//                    String responseBody = response.body().string();
-//                    runOnUiThread(() -> {
-//                        try {
-////                            SpeakingResponse speakingResponse = new Gson().fromJson(responseBody, SpeakingResponse.class);
-////                            userAnswer = speakingResponse.getNumber();
-//                            Toast.makeText(Check_Pronounce.this, "Transcription: " + responseBody, Toast.LENGTH_LONG).show();
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                            Toast.makeText(Check_Pronounce.this, "Failed to parse response", Toast.LENGTH_SHORT).show();
-//                        }
-//                    });
-//                } else {
-//                    // Handle API error
-//                    runOnUiThread(() -> Toast.makeText(Check_Pronounce.this, "API response error", Toast.LENGTH_SHORT).show());
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(@NonNull Call call, @NonNull IOException e) {
-//                // Handle network failure
-//                runOnUiThread(() -> Toast.makeText(Check_Pronounce.this, "API request failed: " + e.getMessage(), Toast.LENGTH_SHORT).show());
-//                e.printStackTrace();
-//            }
-//        });
-//    }
-
-
     private void sendAPIRequest() {
-        // Define the API URL with the correct IP address
-        String apiURL = "http://192.168.8.116:8000/speech";  // Fix the URL syntax here
+//         Get the audio file path
         File audioFile = new File(getOutputFilePath());
 
-        // Check if the file exists
+        // Check if the audio file exists
         if (!audioFile.exists()) {
             Toast.makeText(this, "Audio file not found", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // Create the request body for the file
-        RequestBody fileBody = RequestBody.create(MediaType.parse("audio/wav"), audioFile);
+        // Create a request body with the audio file
+//        RequestBody requestBody = new MultipartBody.Builder()
+//                .setType(MultipartBody.FORM)
+//                .addFormDataPart("audio", "audio.wav", RequestBody.create(audioFile, MediaType.parse("audio/wav")))
+//                .build();
+
         RequestBody requestBody = new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
-                .addFormDataPart("audio", audioFile.getName(), fileBody)
+                .addFormDataPart("audio", "speak_recording_file.wav",
+                        RequestBody.create(audioFile, MediaType.parse("audio/wav")))
                 .build();
 
-        // Initialize OkHttpClient with a timeout
-        OkHttpClient client = new OkHttpClient.Builder()
-                .connectTimeout(30, TimeUnit.SECONDS)
-                .writeTimeout(30, TimeUnit.SECONDS)
-                .readTimeout(30, TimeUnit.SECONDS)
-                .build();
+        for (int i = 0; i < ((MultipartBody) requestBody).size(); i++) {
+            MultipartBody.Part part = ((MultipartBody) requestBody).part(i);
+            Log.d("APIRequest", "Part " + i + " - Name: " + part.headers().get("Content-Disposition"));
+            Log.d("APIRequest", "MIME Type: " + part.body().contentType());
+//            Log.d("APIRequest", "Content Length: " + part.body().contentLength());
+        }
+
 
         // Build the request
         Request request = new Request.Builder()
-                .url(apiURL)
+                .url(Constants.BASE_URL + "/speech") // Updated API endpoint
                 .post(requestBody)
                 .build();
 
-        // Make the request
+        // Send the request using OkHttpClient
+//        client = new OkHttpClient();
         client.newCall(request).enqueue(new Callback() {
+
+
             @Override
             public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
-                if (response.isSuccessful() && response.body() != null) {
-                    // Handle the transcription result
-                    String transcription = response.body().string();
-                    runOnUiThread(() -> Toast.makeText(Check_Pronounce.this, "Transcription: " + transcription, Toast.LENGTH_LONG).show());
+                int statusCode = response.code();
+                String responseBody;
+
+                if (response.body() != null) {
+              
+                    responseBody = new String(response.body().bytes(), StandardCharsets.UTF_8);
+//                    Toast.makeText(Check_Pronounce.this, "Transcription: " + responseBody, Toast.LENGTH_LONG).show();
+//                    System.out.println("Result" + responseBody);
                 } else {
-                    runOnUiThread(() -> Toast.makeText(Check_Pronounce.this, "Error: " + response.message(), Toast.LENGTH_SHORT).show());
+                    responseBody = null;
+                }
+
+                if (response.isSuccessful()) {
+                    // Handle the success
+                    runOnUiThread(() -> {
+                        try {
+                            Toast.makeText(Check_Pronounce.this, "Transcription: " + responseBody, Toast.LENGTH_LONG).show();
+//                            System.out.println("Result" + responseBody);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            Toast.makeText(Check_Pronounce.this, "Failed to parse response", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } else {
+                    // Log the error details
+                    Log.e("APIResponse", "Error code: " + statusCode + ", Body: " + responseBody);
+                    runOnUiThread(() -> Toast.makeText(Check_Pronounce.this, "API response error: " + statusCode, Toast.LENGTH_SHORT).show());
                 }
             }
 
+
+
             @Override
             public void onFailure(@NonNull Call call, @NonNull IOException e) {
-                Log.e("API Request", "Failed to connect: " + e.getMessage());
-                runOnUiThread(() -> Toast.makeText(Check_Pronounce.this, "API Request Failed: " + e.getMessage(), Toast.LENGTH_SHORT).show());
+                // Handle network failure
+                runOnUiThread(() -> Toast.makeText(Check_Pronounce.this, "API request failed: " + e.getMessage(), Toast.LENGTH_SHORT).show());
+                e.printStackTrace();
             }
-
         });
     }
+
+
+
 
 
 
     private String getOutputFilePath() {
         ContextWrapper contextWrapper = new ContextWrapper(getApplicationContext());
         File musicDirectory = contextWrapper.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
+
+        if (!musicDirectory.exists()) {
+            musicDirectory.mkdirs(); // Ensure the directory exists
+        }
+
         File file = new File(musicDirectory, "speak recording file" + ".wav");
+
         return file.getPath();
     }
+
+
+
 
     private void showWinDialog(){
         ConstraintLayout D1 = findViewById(R.id.successConstraintLayoutPronounce);
