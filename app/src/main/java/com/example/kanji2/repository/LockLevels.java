@@ -42,7 +42,7 @@ public class LockLevels {
 
         // Add the ImageView to the LinearLayout (make sure 'imageView' is defined and initialized earlier in your code)
         imageView.setImageResource(R.drawable.locked);
-        imageView.setPadding(40,40,40,40);
+        imageView.setPadding(80,80,80,80);
         linearLayout.addView(imageView);
 
         // Add the LinearLayout to the CardView

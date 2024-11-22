@@ -32,6 +32,8 @@ import com.example.kanji2.Model.LevelData;
 import com.example.kanji2.ml.Model;
 
 import com.example.kanji2.ml.WrittingModel;
+import com.example.kanji2.repository.DaysOfWeekRepository;
+import com.example.kanji2.repository.FamilyRepository;
 import com.example.kanji2.repository.NumberRepository;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -78,7 +80,8 @@ public class Check_Letter extends AppCompatActivity {
             levelName=getIntent().getStringExtra("selectedLevel");
             letter=getIntent().getStringExtra("selectedLetter");
 
-//            Toast.makeText(this, "leter"+letter, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "lettter: "+letter, Toast.LENGTH_SHORT).show();
+
         }
 
         imageView = findViewById(R.id.writingView);
@@ -101,14 +104,14 @@ public class Check_Letter extends AppCompatActivity {
                 }
 
                 drawPaintSketchImage();
-//                userAnswer = classifyImage(bitmap);
+                userAnswer = classifyImage(bitmap);
                 classifyImage(bitmap);
 
                 bitmap = null;
 //                Toast.makeText(Check_Letter.this, "Draw Letter :- " + userAnswer, Toast.LENGTH_SHORT).show();
 //                System.out.println("You draw letter :- "+userAnswer);
 
-//                checkUserAnswer(letter);
+                checkUserAnswer(letter);
                 clearBlackBoard();
 
 //                saveBitmapToLocalDirectory(bitmap, "kanji_drawing_1");
@@ -159,11 +162,16 @@ public class Check_Letter extends AppCompatActivity {
         switch(letter)
         {
             case "一":
-            case "七":
-            case "九":
-            case "ニ":
+            case "二":
             case "三":
+            case "四":
             case "五":
+            case "六":
+            case "七":
+            case "八":
+            case "九":
+            case "十":
+            case "万":
                 if (userAnswer.equals(letter)) {
                     result=true;
                     winNumber();
@@ -173,20 +181,52 @@ public class Check_Letter extends AppCompatActivity {
                     resetNumber();
 //                    Toast.makeText(this, "Try again ! "+result, Toast.LENGTH_SHORT).show();
                 }
-                clearBlackBoard();
+
                 break;
-            case "a":
-//                win();
+            case "父":
+            case "兄":
+            case "姉":
+            case "母":
+            case "妹":
+            case "弟":
+                if (userAnswer.equals(letter)) {
+                    result=true;
+                    winFamily();
+
+                }else {
+                    result=false;
+                    resetFamily();
+
+                }
+                break;
+            case "日":
+            case "木":
+            case "曜":
+            case "金":
+            case "火":
+            case "水":
+            case "月":
+            case "土":
+                if (userAnswer.equals(letter)) {
+                    result=true;
+                    winDaysOfWeek();
+
+                }else {
+                    result=false;
+                    resetDaysOfWeek();
+
+                }
                 break;
         }
+        clearBlackBoard();
         return result;
 
     }
 
     public void resetNumber() {
-        Toast.makeText(this, "Try again ! "+result+levelName, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Try again ! "+result+levelName, Toast.LENGTH_SHORT).show();
 
-        levelDataGet(levelName,letter,false );
+        levelDataGetNumber(levelName,letter,false );
 
         showWrongDialog();
 
@@ -197,16 +237,16 @@ public class Check_Letter extends AppCompatActivity {
     }
 
     public void winNumber() {
-        Toast.makeText(this, "Your are correct ! "+result, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Your are correct ! "+result, Toast.LENGTH_SHORT).show();
 
-        levelDataGet(levelName,letter,true );
+        levelDataGetNumber(levelName,letter,true );
 
         showWinDialog();
 
 
     }
 
-    private void levelDataGet(String levelName, String letter, boolean isWin) {
+    private void levelDataGetNumber(String levelName, String letter, boolean isWin) {
         NumberRepository numberRepository = new NumberRepository();
         String userID = fAuth.getCurrentUser().getUid();
         DocumentReference documentRef = fStore.collection("Numbers").document(userID);
@@ -310,18 +350,6 @@ public class Check_Letter extends AppCompatActivity {
                 }
             }
 
-
-//            int pixel = 0;
-//            for (int i = 0; i < imageSize; i++) {
-//                for (int j = 0; j < imageSize; j++) {
-//                    int val = vals[pixel++]; // ARGB values
-//                    // Put R, G, B values into the ByteBuffer
-//                    byteBuffer.putFloat(((val >> 16) & 0xFF) * (1.F / 255)); // Red channel
-//                    byteBuffer.putFloat(((val >> 8) & 0xFF) * (1.F / 255));  // Green channel
-//                    byteBuffer.putFloat((val & 0xFF) * (1.F / 255));         // Blue channel
-//                }
-//            }
-
             // Load the processed image data into the input tensor
             inputFeature0.loadBuffer(byteBuffer);
 
@@ -334,15 +362,6 @@ public class Check_Letter extends AppCompatActivity {
             float maxConfidence = 0;
             boolean isHaveProbability = false;
 
-//            System.out.println("Output Feature: "+outputFeature0);
-//            System.out.println("confidences: "+Arrays.toString(confidences));
-//
-//            Log.e("TAG", "classifyImage:   "+outputFeature0 );
-//
-//            Toast.makeText(this, "OutputFeature: " + outputFeature0, Toast.LENGTH_SHORT).show();
-//            Toast.makeText(this, "confidences: " + Arrays.toString(confidences), Toast.LENGTH_SHORT).show();
-
-
             // Find the class with the highest confidence score
             for (int i = 0; i < confidences.length; i++) {
                 if (confidences[i] > maxConfidence) {
@@ -352,7 +371,7 @@ public class Check_Letter extends AppCompatActivity {
                 }
             }
 
-            Toast.makeText(this, "" + maxPossibility, Toast.LENGTH_SHORT).show();
+//           Toast.makeText(this, "" + maxPossibility, Toast.LENGTH_SHORT).show();
             // Release the model resources
             model.close();
 
@@ -361,8 +380,7 @@ public class Check_Letter extends AppCompatActivity {
                 return "-1";
 
             // Return the predicted class name
-//            return Constants.resultMappedClass[maxPossibility];
-            return "一";
+            return Constants.resultMappedClass[maxPossibility];
 
         } catch (IOException e) {
             // Handle the exception
@@ -431,6 +449,7 @@ public class Check_Letter extends AppCompatActivity {
             directory.mkdirs();
         }
 
+
         // Create a new file with a properly formatted name
         File fileSaveImage = new File(directory, timeStamp + ".png");
 
@@ -467,7 +486,6 @@ public class Check_Letter extends AppCompatActivity {
         View view = LayoutInflater.from(Check_Letter.this).inflate(R.layout.success_dialog_write, D1);
         Button ButSuccess = view.findViewById(R.id.successDone);
 
-
         AlertDialog.Builder builder = new AlertDialog.Builder(Check_Letter.this);
         builder.setView(view);
         final AlertDialog alertDialog = builder.create();
@@ -491,7 +509,6 @@ public class Check_Letter extends AppCompatActivity {
         View view = LayoutInflater.from(Check_Letter.this).inflate(R.layout.wrong_dialog_write, D1);
         Button ButSuccess = view.findViewById(R.id.successDone);
 
-
         AlertDialog.Builder builder = new AlertDialog.Builder(Check_Letter.this);
         builder.setView(view);
         final AlertDialog alertDialog = builder.create();
@@ -507,6 +524,150 @@ public class Check_Letter extends AppCompatActivity {
             alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
         }
         alertDialog.show();
+    }
+
+    public void resetFamily() {
+//        Toast.makeText(this, "Try again ! "+result+levelName, Toast.LENGTH_SHORT).show();
+
+        levelDataGetFamily(levelName,letter,false );
+
+        showWrongDialog();
+    }
+
+    public void winFamily() {
+//        Toast.makeText(this, "Your are correct ! "+result, Toast.LENGTH_SHORT).show();
+
+        levelDataGetFamily(levelName,letter,true );
+
+        showWinDialog();
+    }
+
+    private void levelDataGetFamily(String levelName, String letter, boolean isWin) {
+        FamilyRepository familyRepository = new FamilyRepository();
+        String userID = fAuth.getCurrentUser().getUid();
+        DocumentReference documentRef = fStore.collection("Family").document(userID);
+
+        documentRef.get().addOnSuccessListener(documentSnapshot -> {
+            LevelData levelData;
+
+            if (documentSnapshot.exists()) {
+                // If the document exists, get the current LevelData
+                levelData = documentSnapshot.toObject(LevelData.class);
+            } else {
+                // If no document exists, create a new LevelData object
+                levelData = new LevelData();
+            }
+
+            // Find the corresponding level and update it based on levelName
+            Level level = new Level();
+            level.setLevelName(levelName);
+            level.setLetter(letter);
+            level.setWriteCompleted(isWin);
+
+            switch (levelName) {
+                case "level1":
+                    levelData.setLevel1(level);
+                    break;
+                case "level2":
+                    levelData.setLevel2(level);
+                    break;
+                case "level3":
+                    levelData.setLevel3(level);
+                    break;
+                case "level14":
+                    levelData.setLevel14(level);
+                    break;
+                case "level15":
+                    levelData.setLevel15(level);
+                    break;
+                case "level6":
+                    levelData.setLevel6(level);
+                    break;
+
+                default:
+                    Toast.makeText(this, "Invalid level name", Toast.LENGTH_SHORT).show();
+                    break;
+            }
+
+            familyRepository.sendGameDataToFirestore(levelData, fStore, this);
+        }).addOnFailureListener(e -> {
+            Toast.makeText(this, "Failed to load data from Firestore", Toast.LENGTH_SHORT).show();
+        });
+    }
+
+    public void resetDaysOfWeek() {
+
+        levelDataGetDaysOfWeek(levelName,letter,false );
+
+        showWrongDialog();
+
+    }
+
+    public void winDaysOfWeek() {
+
+        levelDataGetDaysOfWeek(levelName,letter,true );
+
+        showWinDialog();
+
+    }
+
+    private void levelDataGetDaysOfWeek(String levelName, String letter, boolean isWin) {
+        DaysOfWeekRepository daysOfWeekRepository = new DaysOfWeekRepository();
+        String userID = fAuth.getCurrentUser().getUid();
+        DocumentReference documentRef = fStore.collection("DaysOfWeek").document(userID);
+
+        documentRef.get().addOnSuccessListener(documentSnapshot -> {
+            LevelData levelData;
+
+            if (documentSnapshot.exists()) {
+                // If the document exists, get the current LevelData
+                levelData = documentSnapshot.toObject(LevelData.class);
+            } else {
+                // If no document exists, create a new LevelData object
+                levelData = new LevelData();
+            }
+
+            // Find the corresponding level and update it based on levelName
+            Level level = new Level();
+            level.setLevelName(levelName);
+            level.setLetter(letter);
+            level.setWriteCompleted(isWin);
+
+            switch (levelName) {
+                case "level1":
+                    levelData.setLevel1(level);
+                    break;
+                case "level2":
+                    levelData.setLevel2(level);
+                    break;
+                case "level3":
+                    levelData.setLevel3(level);
+                    break;
+                case "level14":
+                    levelData.setLevel14(level);
+                    break;
+                case "level15":
+                    levelData.setLevel15(level);
+                    break;
+                case "level6":
+                    levelData.setLevel6(level);
+                    break;
+                case "level7":
+                    levelData.setLevel7(level);
+                    break;
+                case "level8":
+                    levelData.setLevel8(level);
+                    break;
+
+                default:
+                    Toast.makeText(this, "Invalid level name", Toast.LENGTH_SHORT).show();
+                    break;
+            }
+
+            daysOfWeekRepository.sendGameDataToFirestore(levelData, fStore, this);
+        }).addOnFailureListener(e -> {
+            Toast.makeText(this, "Failed to load data from Firestore", Toast.LENGTH_SHORT).show();
+        });
     }
 
 }

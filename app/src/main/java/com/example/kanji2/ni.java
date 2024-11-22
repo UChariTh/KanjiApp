@@ -19,7 +19,7 @@ public class ni extends AppCompatActivity {
     Button buttonAudio3;
     Button buttonAudio4;
     Button writingStart,pronounceStart;
-    String level,letter="ニ";
+    String level,letter="二";
 
 
 

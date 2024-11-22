@@ -20,7 +20,7 @@ public class shi extends AppCompatActivity {
     Button buttonAudio3;
     Button buttonAudio4;
     Button writingStart,pronounceStart;
-    String level,letter="一";
+    String level,letter="四";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

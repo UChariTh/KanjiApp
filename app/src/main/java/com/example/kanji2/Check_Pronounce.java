@@ -34,8 +34,14 @@ import androidx.core.view.WindowInsetsCompat;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.example.kanji2.LocalDatabase.Constants;
+import com.example.kanji2.Model.Level;
+import com.example.kanji2.Model.LevelData;
 import com.example.kanji2.ResponseModels.SpeakingResponse;
+import com.example.kanji2.repository.NumberRepository;
 import com.github.squti.androidwaverecorder.WaveRecorder;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -69,7 +75,11 @@ public class Check_Pronounce extends AppCompatActivity {
     private static int Microphone_Permission_Code = 200;
     private WaveRecorder waveRecorder;
     boolean isRecording = false;
-    Boolean isStart=false;
+    Boolean isStart=false,result;
+
+    String userID;
+    FirebaseAuth fAuth;
+    FirebaseFirestore fStore;
 
     String userAnswer;
     private OkHttpClient client;
@@ -90,6 +100,9 @@ public class Check_Pronounce extends AppCompatActivity {
         if (getIntent() != null) {
             levelName = getIntent().getStringExtra("selectedLevel");
             letter = getIntent().getStringExtra("selectedLetter");
+
+
+            Toast.makeText(this, "lettter: "+letter, Toast.LENGTH_SHORT).show();
         }
         if (isMicrophonePresent()) {
             getMicrophonePermission();
@@ -99,6 +112,11 @@ public class Check_Pronounce extends AppCompatActivity {
         showLetter=findViewById(R.id.speakTextView);
         back =findViewById(R.id.btnBack);
         checkLetter=findViewById(R.id.check);
+
+        fAuth       = FirebaseAuth.getInstance();
+        fStore      = FirebaseFirestore.getInstance();
+
+        userID = fAuth.getCurrentUser().getUid();
 
         handler = new Handler();
         isAnimating = false;
@@ -116,13 +134,6 @@ public class Check_Pronounce extends AppCompatActivity {
 
                         btnRecordPress(v);
 
-//                        if(!getTime){
-//                            getTime=true;
-//                            startTime();
-//                            resetTime();
-//                        }else{
-//                        }
-
                         if(!isStart){
                             isStart=true;
                         }
@@ -132,7 +143,6 @@ public class Check_Pronounce extends AppCompatActivity {
 
                         stopContinuousAnimation();
 
-//                        cancelTimer();
 
                         break;
                 }
@@ -159,15 +169,29 @@ public class Check_Pronounce extends AppCompatActivity {
 
                     if (isRecording){
                         stopRecording();
+
                     }
                     isStart = false;
                     sendAPIRequest();
+
+
                 }
 
-//                showWinDialog();
+
+                checkLetter.setBackground(ContextCompat.getDrawable(Check_Pronounce.this, R.drawable.clickerasebg));
+                checkLetter.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        checkLetter.setBackground(ContextCompat.getDrawable(Check_Pronounce.this, R.drawable.block04but));
+                    }
+                }, 100);
+
+
             }
         });
     }
+
+
 
     private boolean isMicrophonePresent() {
         if (this.getPackageManager().hasSystemFeature(PackageManager.FEATURE_MICROPHONE)){
@@ -293,8 +317,11 @@ public class Check_Pronounce extends AppCompatActivity {
                     // Handle the success
                     runOnUiThread(() -> {
                         try {
+                            userAnswer=responseBody;
                             Toast.makeText(Check_Pronounce.this, "Transcription: " + responseBody, Toast.LENGTH_LONG).show();
 //                            System.out.println("Result" + responseBody);
+
+                            checkUserAnswer(letter);
                         } catch (Exception e) {
                             e.printStackTrace();
                             Toast.makeText(Check_Pronounce.this, "Failed to parse response", Toast.LENGTH_SHORT).show();
@@ -318,9 +345,444 @@ public class Check_Pronounce extends AppCompatActivity {
         });
     }
 
+    private boolean checkUserAnswer(String letter) {
+
+        switch(letter)
+        {
+            case "一":
+            case "二":
+            case "三":
+            case "四":
+            case "五":
+            case "六":
+            case "七":
+            case "八":
+            case "九":
+            case "十":
+            case "万":
+                if (userAnswer.equals(letter)) {
+                    result=true;
+                    winNumber();
+
+                }else {
+                    result=false;
+                    resetNumber();
+
+                }
+                break;
+
+            case "父":
+            case "兄":
+            case "姉":
+            case "母":
+            case "妹":
+            case "弟":
+                if (userAnswer.equals(letter)) {
+                    result=true;
+                    winFamily();
+
+                }else {
+                    result=false;
+                    resetFamily();
+
+                }
+                break;
+
+            case "日":
+            case "木":
+            case "曜":
+            case "金":
+            case "火":
+            case "水":
+            case "月":
+            case "土":
+                if (userAnswer.equals(letter)) {
+                    result=true;
+                    winDaysOfWeek();
+
+                }else {
+                    result=false;
+                    resetDaysOfWeek();
+
+                }
+                break;
+
+        }
+        return result;
+
+    }
+
+    public void resetNumber() {
+//        Toast.makeText(this, "Try again ! "+result, Toast.LENGTH_SHORT).show();
+
+        levelDataGetNumber(levelName,letter,false );
+
+        showWrongDialog();
+
+    }
+    public void winNumber() {
+//        Toast.makeText(this, "Your are correct ! "+result, Toast.LENGTH_SHORT).show();
+
+        levelDataGetNumber(levelName,letter,true );
+
+        showWinDialog();
+
+    }
+    private void levelDataGetNumber(String levelName, String letter, boolean isWin) {
+        String userID = fAuth.getCurrentUser().getUid();
+        DocumentReference documentRef = fStore.collection("Numbers").document(userID);
+
+        documentRef.get().addOnSuccessListener(documentSnapshot -> {
+            LevelData levelData;
+
+            if (documentSnapshot.exists()) {
+                levelData = documentSnapshot.toObject(LevelData.class);
+            } else {
+                levelData = new LevelData();
+            }
+
+            Level level = null;
+
+            switch (levelName) {
+                case "level1":
+                    level = levelData.getLevel1();
+                    break;
+                case "level2":
+                    level = levelData.getLevel2();
+                    break;
+                case "level3":
+                    level = levelData.getLevel3();
+                    break;
+                case "level14":
+                    level = levelData.getLevel14();
+                    break;
+                case "level15":
+                    level = levelData.getLevel15();
+                    break;
+                case "level6":
+                    level = levelData.getLevel6();
+                    break;
+                case "level7":
+                    level = levelData.getLevel7();
+                    break;
+                case "level8":
+                    level = levelData.getLevel8();
+                    break;
+                case "level9":
+                    level = levelData.getLevel9();
+                    break;
+                case "level10":
+                    level = levelData.getLevel10();
+                    break;
+                case "level11":
+                    level = levelData.getLevel11();
+                    break;
+                case "level12":
+                    level = levelData.getLevel12();
+                    break;
+                case "level13":
+                    level = levelData.getLevel13();
+                    break;
+                default:
+                    Toast.makeText(this, "Invalid level name", Toast.LENGTH_SHORT).show();
+                    return;
+            }
+
+            if (level == null) {
+                level = new Level();
+                level.setWriteCompleted(false); // Initialize writeComplete to false for a new level
+            }
+
+            // Update fields
+            level.setLevelName(levelName);
+            level.setLetter(letter);
+            level.setSpeakCompleted(isWin);
+
+            // Update writeCompleted only if necessary
+            if (!level.isWriteCompleted()) {
+                level.setWriteCompleted(false);
+            } else {
+                level.setWriteCompleted(true);
+            }
+
+            // Update the level in LevelData
+            switch (levelName) {
+                case "level1":
+                    levelData.setLevel1(level);
+                    break;
+                case "level2":
+                    levelData.setLevel2(level);
+                    break;
+                case "level3":
+                    levelData.setLevel3(level);
+                    break;
+                case "level14":
+                    levelData.setLevel14(level);
+                    break;
+                case "level15":
+                    levelData.setLevel15(level);
+                    break;
+                case "level6":
+                    levelData.setLevel6(level);
+                    break;
+                case "level7":
+                    levelData.setLevel7(level);
+                    break;
+                case "level8":
+                    levelData.setLevel8(level);
+                    break;
+                case "level9":
+                    levelData.setLevel9(level);
+                    break;
+                case "level10":
+                    levelData.setLevel10(level);
+                    break;
+                case "level11":
+                    levelData.setLevel11(level);
+                    break;
+                case "level12":
+                    levelData.setLevel12(level);
+                    break;
+                case "level13":
+                    levelData.setLevel13(level);
+                    break;
+            }
+
+            // Save the updated LevelData back to Firestore
+            documentRef.set(levelData).addOnSuccessListener(aVoid -> {
+//                Toast.makeText(this, "Level updated successfully", Toast.LENGTH_SHORT).show();
+            }).addOnFailureListener(e -> {
+                Toast.makeText(this, "Failed to update level: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            });
+        }).addOnFailureListener(e -> {
+            Toast.makeText(this, "Failed to load data from Firestore", Toast.LENGTH_SHORT).show();
+        });
+    }
 
 
+    public void resetFamily() {
 
+        levelDataGetFamily(levelName,letter,false );
+
+        showWrongDialog();
+
+    }
+    public void winFamily() {
+
+        levelDataGetFamily(levelName,letter,true );
+
+        showWinDialog();
+
+
+    }
+    private void levelDataGetFamily(String levelName, String letter, boolean isWin) {
+        String userID = fAuth.getCurrentUser().getUid();
+        DocumentReference documentRef = fStore.collection("Family").document(userID);
+
+        documentRef.get().addOnSuccessListener(documentSnapshot -> {
+            LevelData levelData;
+
+            if (documentSnapshot.exists()) {
+                levelData = documentSnapshot.toObject(LevelData.class);
+            } else {
+                levelData = new LevelData();
+            }
+
+            Level level = null;
+
+            switch (levelName) {
+                case "level1":
+                    level = levelData.getLevel1();
+                    break;
+                case "level2":
+                    level = levelData.getLevel2();
+                    break;
+                case "level3":
+                    level = levelData.getLevel3();
+                    break;
+                case "level14":
+                    level = levelData.getLevel14();
+                    break;
+                case "level15":
+                    level = levelData.getLevel15();
+                    break;
+                case "level6":
+                    level = levelData.getLevel6();
+                    break;
+
+                default:
+                    Toast.makeText(this, "Invalid level name", Toast.LENGTH_SHORT).show();
+                    return;
+            }
+
+            if (level == null) {
+                level = new Level();
+                level.setWriteCompleted(false); // Initialize writeComplete to false for a new level
+            }
+
+            // Update fields
+            level.setLevelName(levelName);
+            level.setLetter(letter);
+            level.setSpeakCompleted(isWin);
+
+            // Update writeCompleted only if necessary
+            if (!level.isWriteCompleted()) {
+                level.setWriteCompleted(false);
+            } else {
+                level.setWriteCompleted(true);
+            }
+
+            // Update the level in LevelData
+            switch (levelName) {
+                case "level1":
+                    levelData.setLevel1(level);
+                    break;
+                case "level2":
+                    levelData.setLevel2(level);
+                    break;
+                case "level3":
+                    levelData.setLevel3(level);
+                    break;
+                case "level14":
+                    levelData.setLevel14(level);
+                    break;
+                case "level15":
+                    levelData.setLevel15(level);
+                    break;
+                case "level6":
+                    levelData.setLevel6(level);
+                    break;
+
+            }
+
+            // Save the updated LevelData back to Firestore
+            documentRef.set(levelData).addOnSuccessListener(aVoid -> {
+//                Toast.makeText(this, "Level updated successfully", Toast.LENGTH_SHORT).show();
+            }).addOnFailureListener(e -> {
+                Toast.makeText(this, "Failed to update level: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            });
+        }).addOnFailureListener(e -> {
+            Toast.makeText(this, "Failed to load data from Firestore", Toast.LENGTH_SHORT).show();
+        });
+    }
+
+
+    public void resetDaysOfWeek() {
+
+        levelDataGetDaysOfWeek(levelName,letter,false );
+
+        showWrongDialog();
+
+    }
+    public void winDaysOfWeek() {
+
+        levelDataGetDaysOfWeek(levelName,letter,true );
+
+        showWinDialog();
+
+    }
+    private void levelDataGetDaysOfWeek(String levelName, String letter, boolean isWin) {
+        String userID = fAuth.getCurrentUser().getUid();
+        DocumentReference documentRef = fStore.collection("DaysOfWeek").document(userID);
+
+        documentRef.get().addOnSuccessListener(documentSnapshot -> {
+            LevelData levelData;
+
+            if (documentSnapshot.exists()) {
+                levelData = documentSnapshot.toObject(LevelData.class);
+            } else {
+                levelData = new LevelData();
+            }
+
+            Level level = null;
+
+            switch (levelName) {
+                case "level1":
+                    level = levelData.getLevel1();
+                    break;
+                case "level2":
+                    level = levelData.getLevel2();
+                    break;
+                case "level3":
+                    level = levelData.getLevel3();
+                    break;
+                case "level14":
+                    level = levelData.getLevel14();
+                    break;
+                case "level15":
+                    level = levelData.getLevel15();
+                    break;
+                case "level6":
+                    level = levelData.getLevel6();
+                    break;
+                case "level7":
+                    level = levelData.getLevel7();
+                    break;
+                case "level8":
+                    level = levelData.getLevel8();
+                    break;
+
+                default:
+                    Toast.makeText(this, "Invalid level name", Toast.LENGTH_SHORT).show();
+                    return;
+            }
+
+            if (level == null) {
+                level = new Level();
+                level.setWriteCompleted(false); // Initialize writeComplete to false for a new level
+            }
+
+            // Update fields
+            level.setLevelName(levelName);
+            level.setLetter(letter);
+            level.setSpeakCompleted(isWin);
+
+            // Update writeCompleted only if necessary
+            if (!level.isWriteCompleted()) {
+                level.setWriteCompleted(false);
+            } else {
+                level.setWriteCompleted(true);
+            }
+
+            // Update the level in LevelData
+            switch (levelName) {
+                case "level1":
+                    levelData.setLevel1(level);
+                    break;
+                case "level2":
+                    levelData.setLevel2(level);
+                    break;
+                case "level3":
+                    levelData.setLevel3(level);
+                    break;
+                case "level14":
+                    levelData.setLevel14(level);
+                    break;
+                case "level15":
+                    levelData.setLevel15(level);
+                    break;
+                case "level6":
+                    levelData.setLevel6(level);
+                    break;
+                case "level7":
+                    levelData.setLevel7(level);
+                    break;
+                case "level8":
+                    levelData.setLevel8(level);
+                    break;
+
+            }
+
+            // Save the updated LevelData back to Firestore
+            documentRef.set(levelData).addOnSuccessListener(aVoid -> {
+//                Toast.makeText(this, "Level updated successfully", Toast.LENGTH_SHORT).show();
+            }).addOnFailureListener(e -> {
+                Toast.makeText(this, "Failed to update level: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            });
+        }).addOnFailureListener(e -> {
+            Toast.makeText(this, "Failed to load data from Firestore", Toast.LENGTH_SHORT).show();
+        });
+    }
 
 
     private String getOutputFilePath() {
@@ -335,8 +797,6 @@ public class Check_Pronounce extends AppCompatActivity {
 
         return file.getPath();
     }
-
-
 
 
     private void showWinDialog(){
@@ -360,18 +820,61 @@ public class Check_Pronounce extends AppCompatActivity {
                 Intent intent = null;
             switch (letter){
                 case "一":
-                case "七":
-                case "九":
-                case "ニ":
+                case "二":
                 case "三":
+                case "四":
                 case "五":
+                case "六":
+                case "七":
+                case "八":
+                case "九":
+                case "十":
+                case "万":
                     intent = new Intent(getApplicationContext(), Numbers.class);
-
                     break;
-                case "a":
 
+                case "父":
+                case "兄":
+                case "姉":
+                case "母":
+                case "妹":
+                case "弟":
+                    intent = new Intent(getApplicationContext(), Family.class);
+                    break;
+
+                case "日":
+                case "木":
+                case "曜":
+                case "金":
+                case "火":
+                case "水":
+                case "月":
+                case "土":
+                    intent = new Intent(getApplicationContext(), DaysOfWeek.class);
+                    break;
             }
                 startActivity(intent);
+            }
+        });
+
+        if(alertDialog.getWindow()!=null){
+            alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        }
+        alertDialog.show();
+    }
+    private void showWrongDialog(){
+        ConstraintLayout D1 = findViewById(R.id.wongConstraintLayoutWrite);
+        View view = LayoutInflater.from(Check_Pronounce.this).inflate(R.layout.wrong_dialog_write, D1);
+        Button ButSuccess = view.findViewById(R.id.successDone);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(Check_Pronounce.this);
+        builder.setView(view);
+        final AlertDialog alertDialog = builder.create();
+
+        ButSuccess.findViewById(R.id.successDone).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.dismiss();
             }
         });
 
@@ -405,5 +908,6 @@ public class Check_Pronounce extends AppCompatActivity {
             }
         }
     };
+
 
 }
