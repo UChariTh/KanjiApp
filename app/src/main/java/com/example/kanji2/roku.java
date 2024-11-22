@@ -20,7 +20,7 @@ public class roku extends AppCompatActivity {
     Button buttonAudio3;
     Button buttonAudio4;
     Button writingStart,pronounceStart;
-    String level,letter="一";
+    String level,letter="六";
 
 
     @Override

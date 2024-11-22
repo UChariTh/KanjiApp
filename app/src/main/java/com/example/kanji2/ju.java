@@ -19,7 +19,7 @@ public class ju extends AppCompatActivity {
 //    Button buttonAudio3;
 //    Button buttonAudio4;
     Button writingStart,pronounceStart;
-    String level,letter="一";
+    String level,letter="十";
 
 
     @Override

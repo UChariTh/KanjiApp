@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Level_Kanji extends AppCompatActivity {
-    LinearLayout level01,level02,level03,level04,level05,level06,level07;
+    LinearLayout number,family,daysOfWeek,Verbs,level05,level06,level07;
 
     ImageView backbutton;
 
@@ -20,18 +20,34 @@ public class Level_Kanji extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_kanji);
 
-        level01 = findViewById(R.id.btn01);
-        level02 = findViewById(R.id.btn02);
-        level03 = findViewById(R.id.btn03);
-        level04 = findViewById(R.id.btn04);
+        number = findViewById(R.id.btn01);
+        family = findViewById(R.id.btn02);
+        daysOfWeek = findViewById(R.id.btn03);
+        Verbs = findViewById(R.id.btn04);
         level05 = findViewById(R.id.btn05);
         level06 = findViewById(R.id.btn06);
         level07 = findViewById(R.id.btn07);
         backbutton = findViewById(R.id.btnBack);
 
-        level01.setOnClickListener(view -> {
+        number.setOnClickListener(view -> {
             Intent intent = new Intent(Level_Kanji.this, Numbers.class);
             startActivity(intent);
+        });
+
+        family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Level_Kanji.this, Family.class);
+                startActivity(intent);
+            }
+        });
+
+        daysOfWeek.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Level_Kanji.this, DaysOfWeek.class);
+                startActivity(intent);
+            }
         });
 
         backbutton.setOnClickListener(new View.OnClickListener() {

@@ -30,7 +30,7 @@ public class Itchi extends AppCompatActivity {
 
         if(getIntent()!=null) {
             level=getIntent().getStringExtra("selectedLevel");
-            Toast.makeText(this, "level : "+level+letter, Toast.LENGTH_SHORT).show();
+
         }
 
         backbutton = findViewById(R.id.backbutton);

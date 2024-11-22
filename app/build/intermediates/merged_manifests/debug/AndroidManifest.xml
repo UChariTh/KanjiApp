@@ -37,6 +37,69 @@
         android:theme="@style/Theme.Material3.Light"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.kanji2.Do"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Gethu"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Sui"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Ka"
+            android:exported="false" />
+        <activity
+            android:name="com.example.kanji2.Kin"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Shu"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Ki"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Nichi"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Otouto"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Imotho"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Haha"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Ane"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Ani"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Chichi"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.DaysOfWeek"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.kanji2.Family"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
             android:name="com.example.kanji2.Check_Pronounce"
             android:exported="false"
             android:theme="@style/Theme.Material3.Light.NoActionBar" />

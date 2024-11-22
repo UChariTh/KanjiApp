@@ -16,7 +16,7 @@ public class Man extends AppCompatActivity {
     ImageView backbutton,noteButton;
     Button buttonAudio;
     Button writingStart,pronounceStart;
-    String level,letter="一";
+    String level,letter="万";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -174,7 +174,6 @@ public class Numbers extends AppCompatActivity {
 
         }
 
-
         if (intent != null && LockLevels.getSelectedNumber(level)<=(selectedLevel+1)) {
 
             startActivity(intent);
@@ -194,9 +193,9 @@ public class Numbers extends AppCompatActivity {
 
                 if (student != null){
                     HashMap<Integer, Level> levelHashMap = LockLevels.getLevelsMap(student);
-                    for (int i = 15; i>=0; i--){
+                    for (int i = 13; i>=0; i--){
                         if (levelHashMap.containsKey(i)){
-                            if (levelHashMap.get(i).isWriteCompleted() ){
+                            if (levelHashMap.get(i).isWriteCompleted() && levelHashMap.get(i).isSpeakCompleted()){
                                 unlockLevels(i);
                                 selectedLevel = i;
                                 break;
