@@ -60,10 +60,6 @@ public class Login extends AppCompatActivity {
                 Toast.makeText(Login.this, "error", Toast.LENGTH_SHORT).show();
             }
 
-//            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//            startActivity(intent);
-////            Toast.makeText(Login.this, "userID "+currentUser.getUid(), Toast.LENGTH_SHORT).show();
-//            finish();
         }
     }
 
@@ -145,18 +141,6 @@ public class Login extends AppCompatActivity {
                             }
                         });
 
-//                if (item.equals("Admin")){
-//                    navigateAdminDashBoard();
-//
-//                    Toast.makeText(Login.this, "Admin Login", Toast.LENGTH_SHORT).show();
-//
-//                }else if(item.equals("Student")){
-//                    navigateStudentDashBoard();
-//
-//                    Toast.makeText(Login.this, "Student Login", Toast.LENGTH_SHORT).show();
-//                }else{
-//                    Toast.makeText(Login.this, "error", Toast.LENGTH_SHORT).show();
-//                }
 
             }
         });
