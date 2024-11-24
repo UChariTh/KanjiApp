@@ -125,9 +125,9 @@
                             android:layout_marginTop="0dp"
                             android:fontFamily="sans-serif-black"
                             android:padding="7dp"
-                            android:text="nichi
-                            日
-                            day"
+                            android:text="sui
+                            水
+                            water"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="30sp" />
@@ -253,9 +253,9 @@
                             android:layout_marginTop="0dp"
                             android:fontFamily="sans-serif-black"
                             android:padding="7dp"
-                            android:text="sui
-                            水
-                            water"
+                            android:text="gethu
+                            月
+                            moon"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="30sp" />
@@ -285,9 +285,9 @@
                             android:layout_marginTop="0dp"
                             android:fontFamily="sans-serif-black"
                             android:padding="7dp"
-                            android:text="gethu
-                            月
-                            moon"
+                            android:text="nichi
+                            日
+                            day"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="30sp" />

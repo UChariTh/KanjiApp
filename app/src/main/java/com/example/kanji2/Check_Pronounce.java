@@ -101,8 +101,7 @@ public class Check_Pronounce extends AppCompatActivity {
             levelName = getIntent().getStringExtra("selectedLevel");
             letter = getIntent().getStringExtra("selectedLetter");
 
-
-            Toast.makeText(this, "lettter: "+letter, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "lettter: "+letter, Toast.LENGTH_SHORT).show();
         }
         if (isMicrophonePresent()) {
             getMicrophonePermission();
@@ -166,7 +165,6 @@ public class Check_Pronounce extends AppCompatActivity {
                     Toast.makeText(Check_Pronounce.this, "Answer Please !", Toast.LENGTH_SHORT).show();
                     return;
                 }else {
-
                     if (isRecording){
                         stopRecording();
 
@@ -189,6 +187,7 @@ public class Check_Pronounce extends AppCompatActivity {
 
             }
         });
+
     }
 
 
@@ -221,7 +220,7 @@ public class Check_Pronounce extends AppCompatActivity {
         waveRecorder.setNoiseSuppressorActive(true);
         waveRecorder.startRecording();
 
-        Toast.makeText(this, "Recording is started", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Recording is started", Toast.LENGTH_SHORT).show();
         isRecording = true;
     }
     private void stopRecording() {
@@ -229,7 +228,7 @@ public class Check_Pronounce extends AppCompatActivity {
             waveRecorder.stopRecording();
             waveRecorder = null;
 
-            Toast.makeText(this, "Saved Your Recording", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Saved Your Recording", Toast.LENGTH_SHORT).show();
             isRecording = false;
         }
     }
@@ -318,7 +317,7 @@ public class Check_Pronounce extends AppCompatActivity {
                     runOnUiThread(() -> {
                         try {
                             userAnswer=responseBody;
-                            Toast.makeText(Check_Pronounce.this, "Transcription: " + responseBody, Toast.LENGTH_LONG).show();
+//                            Toast.makeText(Check_Pronounce.this, "Transcription: " + responseBody, Toast.LENGTH_LONG).show();
 //                            System.out.println("Result" + responseBody);
 
                             checkUserAnswer(letter);
@@ -359,6 +358,8 @@ public class Check_Pronounce extends AppCompatActivity {
             case "八":
             case "九":
             case "十":
+            case "百":
+            case "千":
             case "万":
                 if (userAnswer.equals(letter)) {
                     result=true;
@@ -453,11 +454,11 @@ public class Check_Pronounce extends AppCompatActivity {
                 case "level3":
                     level = levelData.getLevel3();
                     break;
-                case "level14":
-                    level = levelData.getLevel14();
+                case "level4":
+                    level = levelData.getLevel4();
                     break;
-                case "level15":
-                    level = levelData.getLevel15();
+                case "level5":
+                    level = levelData.getLevel5();
                     break;
                 case "level6":
                     level = levelData.getLevel6();
@@ -600,11 +601,11 @@ public class Check_Pronounce extends AppCompatActivity {
                 case "level3":
                     level = levelData.getLevel3();
                     break;
-                case "level14":
-                    level = levelData.getLevel14();
+                case "level4":
+                    level = levelData.getLevel4();
                     break;
-                case "level15":
-                    level = levelData.getLevel15();
+                case "level5":
+                    level = levelData.getLevel5();
                     break;
                 case "level6":
                     level = levelData.getLevel6();
@@ -706,11 +707,11 @@ public class Check_Pronounce extends AppCompatActivity {
                 case "level3":
                     level = levelData.getLevel3();
                     break;
-                case "level14":
-                    level = levelData.getLevel14();
+                case "level4":
+                    level = levelData.getLevel4();
                     break;
-                case "level15":
-                    level = levelData.getLevel15();
+                case "level5":
+                    level = levelData.getLevel5();
                     break;
                 case "level6":
                     level = levelData.getLevel6();

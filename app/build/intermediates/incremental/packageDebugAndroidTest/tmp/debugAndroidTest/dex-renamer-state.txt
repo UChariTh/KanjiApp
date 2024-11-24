@@ -1,4 +1,4 @@
-#Fri Nov 01 14:20:51 IST 2024
+#Sun Nov 24 16:59:15 IST 2024
 base.0=D\:\\mobileApp\\KanjiApp\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
 base.1=D\:\\mobileApp\\KanjiApp\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
 base.2=D\:\\mobileApp\\KanjiApp\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\12\\classes.dex

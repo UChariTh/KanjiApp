@@ -80,7 +80,7 @@ public class Check_Letter extends AppCompatActivity {
             levelName=getIntent().getStringExtra("selectedLevel");
             letter=getIntent().getStringExtra("selectedLetter");
 
-            Toast.makeText(this, "lettter: "+letter, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "lettter: "+letter, Toast.LENGTH_SHORT).show();
 
         }
 
@@ -278,11 +278,11 @@ public class Check_Letter extends AppCompatActivity {
                 case "level3":
                     levelData.setLevel3(level);
                     break;
-                case "level14":
-                    levelData.setLevel14(level);
+                case "level4":
+                    levelData.setLevel4(level);
                     break;
-                case "level15":
-                    levelData.setLevel15(level);
+                case "level5":
+                    levelData.setLevel5(level);
                     break;
                 case "level6":
                     levelData.setLevel6(level);
@@ -574,11 +574,11 @@ public class Check_Letter extends AppCompatActivity {
                 case "level3":
                     levelData.setLevel3(level);
                     break;
-                case "level14":
-                    levelData.setLevel14(level);
+                case "level4":
+                    levelData.setLevel4(level);
                     break;
-                case "level15":
-                    levelData.setLevel15(level);
+                case "level5":
+                    levelData.setLevel5(level);
                     break;
                 case "level6":
                     levelData.setLevel6(level);
@@ -643,11 +643,11 @@ public class Check_Letter extends AppCompatActivity {
                 case "level3":
                     levelData.setLevel3(level);
                     break;
-                case "level14":
-                    levelData.setLevel14(level);
+                case "level4":
+                    levelData.setLevel4(level);
                     break;
-                case "level15":
-                    levelData.setLevel15(level);
+                case "level5":
+                    levelData.setLevel5(level);
                     break;
                 case "level6":
                     levelData.setLevel6(level);
