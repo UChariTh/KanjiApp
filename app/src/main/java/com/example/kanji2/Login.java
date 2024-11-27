@@ -38,12 +38,27 @@ public class Login extends AppCompatActivity {
     private PreferenceManager preferenceManager;
 
 
-    @Override
+        @Override
     public void onStart() {
         super.onStart();
 
+            if (getIntent().getBooleanExtra("fromRegister", false)) {
+                // Skip onStart() if coming directly from Register
+                Log.d("LoginActivity", "Skipping onStart() as activity launched from Register.");
+                return;
+            }
+
+            // Ensure fAuth is initialized before use
+            if (fAuth == null) {
+                fAuth = FirebaseAuth.getInstance();
+            }
+
+        preferenceManager = new PreferenceManager(getApplicationContext());
+
         FirebaseUser currentUser = fAuth.getCurrentUser();
         String userTypeFirebase=preferenceManager.getString(Constants.KEY_PREFERENCE_USER_TYPE);
+
+
         if(currentUser != null){
 
             if (userTypeFirebase.equals("Student")){
@@ -62,6 +77,7 @@ public class Login extends AppCompatActivity {
 
         }
     }
+
 
 
     @Override
@@ -84,11 +100,6 @@ public class Login extends AppCompatActivity {
 
         preferenceManager.putString(Constants.KEY_USER_ID,fAuth.getUid());
 
-
-//        String email=  preferenceManager.getString(Constants.KEY_PREFERENCE_EMAIL);
-//        if(email != null){
-//            signIn();
-//        }
 
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,8 +144,8 @@ public class Login extends AppCompatActivity {
                                     signIn();
 
                                 } else {
-                                    System.out.println("Exception "+task.getException());
-                                    System.out.println("Result "+task.getResult());
+//                                    System.out.println("Exception "+task.getException());
+//                                    System.out.println("Result "+task.getResult());
                                     Toast.makeText(Login.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
                                 }
@@ -158,6 +169,16 @@ public class Login extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    private void signOutUser() {
+        fAuth.signOut();
+        preferenceManager.clear(); // Optional: Clear all saved preferences
+        Intent intent = new Intent(getApplicationContext(), Login.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
+    }
+
     private void signIn() {
         String user=userType.getSelectedItem().toString();
 
@@ -196,5 +217,6 @@ public class Login extends AppCompatActivity {
     private boolean isValidEmail(String email) {
         return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
+
 
 }
