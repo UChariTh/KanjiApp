@@ -38,7 +38,7 @@ public class Register extends AppCompatActivity {
 
     TextInputEditText editTextEmail, editTextPassword,editTextUserName,editTextTelephone;
     Button buttonReg;
-    FirebaseAuth mAuth;
+    FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     ProgressBar progressBar;
     TextView textView;
@@ -72,7 +72,7 @@ public class Register extends AppCompatActivity {
 
         preferenceManager = new PreferenceManager(getApplicationContext());
 
-        mAuth = FirebaseAuth.getInstance();
+        fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
         textView.setOnClickListener(new View.OnClickListener() {
@@ -84,91 +84,93 @@ public class Register extends AppCompatActivity {
             }
         });
 
+        buttonReg.setOnClickListener(view -> {
+            progressBar.setVisibility(View.VISIBLE);
 
-        buttonReg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                progressBar.setVisibility(View.VISIBLE);
+            String name = editTextUserName.getText().toString();
+            String telephone = editTextTelephone.getText().toString();
+            String email = editTextEmail.getText().toString().trim();
+            String password = editTextPassword.getText().toString().trim();
+            String userType = "Student";
 
-                String name = editTextUserName.getText().toString();
-                String telephone = editTextTelephone.getText().toString();
-                String email=editTextEmail.getText().toString().trim();
-                String password=editTextPassword.getText().toString().trim();
-                String userType="Student";
-
-                if (TextUtils.isEmpty(name)){
-                    editTextUserName.setError("Enter Your Name! ");
-                    return;
-                }
-                if (TextUtils.isEmpty(telephone)){
-                    editTextTelephone.setError("Enter Your Telephone Number! ");
-                    return;
-                }
-                try {
-                    int ageValue = Integer.parseInt(telephone);
-
-                } catch (NumberFormatException e) {
-                    editTextTelephone.setError("Enter only numbers! ");
-                    return;
-                }
-                if (TextUtils.isEmpty(email)){
-                    editTextEmail.setError("Enter Email Address! ");
-                    return;
-                }
-                if (!isValidEmail(email)) {
-                    editTextEmail.setError("Please enter valid E-mail address! ");
-                    return;
-                }
-                if (TextUtils.isEmpty(password)){
-                    editTextPassword.setError("Enter Password! ");
-                    return;
-                }
-                if (!isValidPassword(password)) {
-                    editTextPassword.setError("You have to enter at least 6 characters! ");
-                    return;
-                }
-
-
-                mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                progressBar.setVisibility(View.GONE);
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(Register.this, "Account Created.",
-                                            Toast.LENGTH_SHORT).show();
-
-                                    FirebaseUser currentUser = mAuth.getCurrentUser();
-
-                                    userID=currentUser.getUid();
-                                    preferenceManager.putString(Constants.KEY_USER_ID,userID);
-
-                                    DocumentReference documentReference = fStore.collection("students").document(userID);
-                                    Map<String, Object> students = new HashMap<>();
-                                    students.put("User Name", name);
-                                    students.put("Telephone", telephone);
-                                    students.put("Email", email);
-                                    students.put("UserID", userID);
-                                    students.put("User Type", userType);
-
-//                                    Toast.makeText(Register.this, "Userrrrr"+preferenceManager.getString(Constants.KEY_USER_ID), Toast.LENGTH_SHORT).show();
-
-                                    documentReference.set(students).addOnSuccessListener(unused -> Log.d("TAG", "onSuccess:  " + userID));
-
-
-                                    Intent intent = new Intent(getApplicationContext(), Login.class);
-                                    startActivity(intent);
-                                    finish();
-
-                                } else {
-                                    Toast.makeText(Register.this, "Authentication failed.",
-                                            Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-
-
+            if (TextUtils.isEmpty(name)) {
+                progressBar.setVisibility(View.GONE);
+                editTextUserName.setError("Enter Your Name!");
+                return;
             }
+
+            if (TextUtils.isEmpty(telephone)) {
+                progressBar.setVisibility(View.GONE);
+                editTextTelephone.setError("Enter Your Telephone Number!");
+                return;
+            }
+
+            try {
+                Integer.parseInt(telephone);
+            } catch (NumberFormatException e) {
+                progressBar.setVisibility(View.GONE);
+                editTextTelephone.setError("Enter only numbers!");
+                return;
+            }
+
+            if (TextUtils.isEmpty(email)) {
+                progressBar.setVisibility(View.GONE);
+                editTextEmail.setError("Enter Email Address!");
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                progressBar.setVisibility(View.GONE);
+                editTextEmail.setError("Please enter a valid E-mail address!");
+                return;
+            }
+
+            if (TextUtils.isEmpty(password)) {
+                progressBar.setVisibility(View.GONE);
+                editTextPassword.setError("Enter Password!");
+                return;
+            }
+
+            if (!isValidPassword(password)) {
+                progressBar.setVisibility(View.GONE);
+                editTextPassword.setError("You have to enter at least 6 characters!");
+                return;
+            }
+
+            fAuth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(task -> {
+                        progressBar.setVisibility(View.GONE);
+                        if (task.isSuccessful()) {
+                            Toast.makeText(Register.this, "Account Created.", Toast.LENGTH_SHORT).show();
+
+                            userID = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
+                            preferenceManager.putString(Constants.KEY_USER_ID, userID);
+                            preferenceManager.putString(Constants.KEY_PREFERENCE_USER_TYPE,userType );
+
+                            DocumentReference documentReference = fStore.collection("students").document(userID);
+                            Map<String, Object> students = new HashMap<>();
+                            students.put("User Name", name);
+                            students.put("Telephone", telephone);
+                            students.put("Email", email);
+                            students.put("UserID", userID);
+                            students.put("User Type", userType);
+
+                            documentReference.set(students)
+                                    .addOnSuccessListener(unused -> Log.d(TAG, "onSuccess: " + userID))
+                                    .addOnFailureListener(e -> Log.e(TAG, "onFailure: Firestore save failed", e));
+
+                            Intent intent = new Intent(getApplicationContext(), Login.class);
+                            intent.putExtra("fromRegister", true);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(intent);
+                            finish();
+
+                        } else {
+                            Toast.makeText(Register.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                        }
+                    });
         });
+
 
     }
 
